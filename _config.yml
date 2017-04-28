@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://www.iog.fsu.edu/paj/
+url: localhost:4000
 title: Project on Accountable Justice
 email: dbodsky@fsu.edu
 author: Your Name
