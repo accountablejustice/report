@@ -1,0 +1,33 @@
+---
+layout: default
+type: chartlefttall
+color:
+category: Report
+title: Non-Violent Offenses Drive Admissions to Prison
+description: |
+link: datavis/admissions.html
+---
+There are multiple ways to describe the causes of a prison admission. This report
+uses two methodologies for determining an individual's offense.
+
+### Committing Offense
+The Committing Offense is the most serious charge for which an individual is sentenced to prison.
+It prioritizes violent offenses over property, drug, and other offenses. The Committing Offense
+variable captures violations of probation, parole, and conditional release.
+
+### Longest Sentenced Offense
+The Longest Sentenced Offense is the offense that carries the longest sentence, regardless of the
+seriousness of the offense. However, when two offenses carry the same sentence, this variable, like
+Committing Offense, prioritizes violence. In cases where an individual is admitted to prison for a
+violation of probation or parole, the Longest Sentenced Offense reveals the underlying charge.
+
+### What's the difference between these definitions?
+Committing Offense is most valuable in determining why someone
+was sentenced to prison. In showing probation and parole violations,
+it emphasizes the role that parallel criminal justice institutions play in mass incarceration
+and highlights reforms in _practice_ that could be implemented administratively.
+
+Longest Sentenced Offense is most useful in understanding what changes in law
+are required to reduce the number of people Florida holds in prison, particularly as they
+might relate to sentencing.
+
