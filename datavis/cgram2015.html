@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    rect {
+        stroke: #555;
+    }
+    text {
+        font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 12px;
+
+    }
+    text.year {
+        font-size: 24px;
+        font-weight: 700;
+        fill: #555;
+    }
+    text.comment {
+        font-size: 18px;
+        font-weight: 700;
+        fill: #555;
+        font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        padding: 2px;
+        font: 12px sans-serif;
+        background: black;
+        opacity: .45;
+        color: white;
+        border: 0px;
+        border-radius: 8px;
+        pointer-events: none;
+    }
+
+
+
+    a {
+        position: absolute;
+        left: 414px;
+        top: 550px;
+    }
+</style>
+<body>
+<a target="_blank"><img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Blues.png" width="150" height="40" alt="Blues"></a>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script src="//d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script>
+
+    var width = 960
+    var height = 600
+
+
+    var interval = 60000
+    var maxSize = 140
+
+    var formatcomma = d3.format(",.0f");
+
+    var years = d3.range(2015, 2015+1, 1)
+    var yearIndex = -1
+    var year = years[0]
+
+    var projection = d3.geoAlbersUsa()
+        .scale(width)
+        .translate([width / 2, height / 2])
+
+    var size = d3.scaleSqrt().rangeRound([0, maxSize])
+
+    var svg = d3.select('body').append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .append('g')
+
+
+
+    var yearLabel = svg.append('text')
+        .attr('class', 'year')
+        .attr('x', width / 2)
+        .attr('y', 30)
+        .attr('text-anchor', 'middle')
+
+
+    var linkForce = d3.forceLink()
+        .id(function (d) { return d.state })
+        .distance(function (d) {
+            return (
+                    size(d.source.population.find(function (e) { return e.year === year }).pop) +
+                    size(d.target.population.find(function (e) { return e.year === year }).pop)
+                ) / 2
+        })
+        .strength(0.6)
+
+    var collisionForce = rectCollide()
+        .size(function (d) {
+            var l = size(d.population.find(function (e) { return e.year === year }).pop)
+            return [l, l]
+        })
+        .iterations(10)
+
+    var simulation = d3.forceSimulation()
+        .force('center', d3.forceCenter(width / 2, (height - maxSize) / 2))
+        .force('link', linkForce)
+        .force('collision', collisionForce)
+        .force('x', d3.forceX(function (d) { return d.xi }).strength(0.0125))
+        .force('y', d3.forceY(function (d) { return d.yi }).strength(0.0125))
+
+
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    d3.json('newdata.json', initialize)
+
+
+
+
+    function initialize(error, data) {
+        if (error) { throw error }
+
+        var nodes = data.nodes
+        var links = data.links
+
+        size.domain([0, d3.max(nodes, function (d) {
+            return d3.max(d.population, function (e) { return e.pop })
+        })])
+
+        nodes.forEach(function (d) {
+            var coords = projection([d.lon, d.lat])
+            d.x = d.xi = coords[0]
+            d.y = d.yi = coords[1]
+        })
+
+        var states = svg.selectAll('.state')
+            .data(nodes)
+            .enter().append('g')
+            .attr('class', 'state')
+
+
+
+
+
+        states.append('rect')
+        states.append('text')
+            .attr('text-anchor', 'middle')
+            .attr('dy', '.3em')
+            .style("pointer-events", "none")
+            .text(function (d) { return d.state })
+
+
+        states.append("a")
+            .attr("xlink:href", "timecartogram.html")
+            .append("rect")
+            .style("fill", "transparent")
+
+
+
+
+
+        simulation.nodes(nodes)
+        simulation.force('link').links(links)
+        simulation.on('tick', ticked)
+
+        update()
+        d3.interval(update, interval)
+
+        function update() {
+            year = years[++yearIndex >= years.length ? yearIndex = 0 : yearIndex]
+
+            yearLabel.text(year)
+
+            if (yearIndex === 0) { nodes.forEach(function (d) { d.x = d.xi; d.y = d.yi }) }
+
+            simulation.nodes(nodes).alpha(1).restart()
+        }
+
+
+        function ticked() {
+
+
+            var sizes = d3.local()
+            var colors = d3.local()
+
+            states
+                .property(sizes, function (d) {
+                    return size(d.population.find(function (e) { return e.year === year }).pop)
+                })
+                .property(colors, function (d) {
+                    return (d.incrate.find(function (e) { return e.year === year }).rate)
+                })
+                .attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')' })
+                .style("fill", function(d) {
+                    if (([d.incrate.find( function (e) {
+                            return e.year === year }).rate]) <= 499)
+                    {return "black"}
+                    else {return "white"}
+                })
+
+
+            states.selectAll('rect')
+                .attr('x', function (d) { return sizes.get(this) / -2 })
+                .attr('y', function (d) { return sizes.get(this) / -2 })
+                .attr('width', function (d) { return sizes.get(this) })
+                .attr('height', function (d) { return sizes.get(this) })
+                .attr('fill', function(d) {return d3.interpolateBlues([d.incrate.find(function (e) {
+                        return e. year === year }).rate - 100] / 650)})
+                .on("mouseover", function(d) {
+                    div.transition()
+                        .duration(100)
+                        .style("opacity", .9);
+                    div	.html(d.state +
+                        "<br/> Prison Population: " + formatcomma(d.population.find (function (e) {return e.year === year}).pop)
+                        + " <br/>"
+                        + " <br/> Incarceration Rate:  <br/>"+ d.incrate.find( function (e) { return e.year === year}).rate
+                        + " per 100k")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px")
+                        .style("fill", "green");
+                })
+                .on("mouseout", function(d) {
+                    div.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                });
+            svg.append("rect")
+                .attr('x', width-200)
+                .attr('y', height - 123)
+                .attr('width', size(100000))
+                .attr('height', size(100000))
+                .attr("fill", "none")
+            ;
+            svg.append("rect")
+                .attr('x', width-200)
+                .attr('y', height - 123 - size(25000) + size(100000))
+                .attr('width', size(25000))
+                .attr('height', size(25000))
+                .attr("fill", "none")
+            ;
+
+            svg.append("rect")
+                .attr('x', width-200)
+                .attr('y', height - 123 - size(10000) + size(100000))
+                .attr('width', size(10000))
+                .attr('height', size(10000))
+                .attr("fill", "none")
+            ;
+
+            svg.append("text")
+                .attr('x', width-200 + size(100000)/2 - 8)
+                .attr('y', height - 126)
+                .text("100k");
+
+            svg.append("text")
+                .attr('x', width-200 + size(25000)/2 - 8)
+                .attr('y', height - 126+ size(25000))
+                .text("25k");
+
+            svg.append("text")
+                .attr('x', width-202 + size(10000)/2 - 8)
+                .attr('y', height - 126 + size(100000)- size(10000))
+                .text("10k");
+
+
+
+        }
+    }
+
+
+    function rectCollide() {
+        var nodes, sizes, masses
+        var size = constant([0, 0])
+        var strength = 1
+        var iterations = 1
+
+        function force() {
+            var node, size, mass, xi, yi
+            var i = -1
+            while (++i < iterations) { iterate() }
+
+            function iterate() {
+                var j = -1
+                var tree = d3.quadtree(nodes, xCenter, yCenter).visitAfter(prepare)
+
+                while (++j < nodes.length) {
+                    node = nodes[j]
+                    size = sizes[j]
+                    mass = masses[j]
+                    xi = xCenter(node)
+                    yi = yCenter(node)
+
+                    tree.visit(apply)
+                }
+            }
+
+            function apply(quad, x0, y0, x1, y1) {
+                var data = quad.data
+                var xSize = (size[0] + quad.size[0]) / 2
+                var ySize = (size[1] + quad.size[1]) / 2
+                if (data) {
+                    if (data.index <= node.index) { return }
+
+                    var x = xi - xCenter(data)
+                    var y = yi - yCenter(data)
+                    var xd = Math.abs(x) - xSize
+                    var yd = Math.abs(y) - ySize
+
+                    if (xd < 0 && yd < 0) {
+                        var l = Math.sqrt(x * x + y * y)
+                        var m = masses[data.index] / (mass + masses[data.index])
+
+                        if (Math.abs(xd) < Math.abs(yd)) {
+                            node.vx -= (x *= xd / l * strength) * m
+                            data.vx += x * (1 - m)
+                        } else {
+                            node.vy -= (y *= yd / l * strength) * m
+                            data.vy += y * (1 - m)
+                        }
+                    }
+                }
+
+                return x0 > xi + xSize || y0 > yi + ySize ||
+                    x1 < xi - xSize || y1 < yi - ySize
+            }
+
+            function prepare(quad) {
+                if (quad.data) {
+                    quad.size = sizes[quad.data.index]
+                } else {
+                    quad.size = [0, 0]
+                    var i = -1
+                    while (++i < 4) {
+                        if (quad[i] && quad[i].size) {
+                            quad.size[0] = Math.max(quad.size[0], quad[i].size[0])
+                            quad.size[1] = Math.max(quad.size[1], quad[i].size[1])
+                        }
+                    }
+                }
+            }
+        }
+
+        function xCenter(d) { return d.x + d.vx }
+        function yCenter(d) { return d.y + d.vy }
+
+        force.initialize = function (_) {
+            sizes = (nodes = _).map(size)
+            masses = sizes.map(function (d) { return d[0] * d[1] })
+        }
+
+        force.size = function (_) {
+            return (arguments.length
+                ? (size = typeof _ === 'function' ? _ : constant(_), force)
+                : size)
+        }
+
+        force.strength = function (_) {
+            return (arguments.length ? (strength = +_, force) : strength)
+        }
+
+        force.iterations = function (_) {
+            return (arguments.length ? (iterations = +_, force) : iterations)
+        }
+
+        return force
+    }
+
+    function constant(_) {
+        return function () { return _ }
+    }
+
+
+
+    var clickicon =  d3.selectAll('svg')
+        .append('image')
+        .attr('xlink:href','/img/slides/click.svg')
+        .attr('height', '25')
+        .attr('width', '25')
+        .attr('opacity', 0)
+        .attr('x', 675)
+        .attr('y', 340);
+
+
+
+    var clicktext = svg.append("text")
+        .attr('x',700)
+        .attr('y',355)
+        .attr('opacity',0)
+        .text("Click on any state to see how we got here.");
+
+    clickicon.transition()
+        .delay(2000)
+        .duration(2000)
+        .attr('opacity', 1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1).transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+
+    ;
+
+    clicktext.transition()
+        .delay(2000)
+        .duration(2000)
+        .attr('opacity', 1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1) .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1) .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1);
+
+    function subheadingTransition() {
+
+        var subheading1 = svg.append("text")
+            .attr('x', width/2)
+            .attr('y', 58 )
+            .attr("class","comment")
+            .attr("text-anchor","middle")
+            .attr("fill", "black")
+            .attr("opacity",0)
+            .text("The size of each state represents the number of people in its prisons.");
+
+
+
+        var subheading2 = svg.append("text")
+            .attr('x', width/2)
+            .attr('y', 58 )
+            .attr("class","comment")
+            .attr("text-anchor","middle")
+            .attr("fill", "black")
+            .attr("opacity",0)
+            .text("Darker colors indicate a higher percentage of a state's population is in prison." +
+                "");
+        repeat();
+
+        function repeat() {
+            subheading1
+                .transition()
+                .duration(2000)
+                .attr("opacity", 1)
+                .transition()
+                .delay(6000)
+                .duration(2000)
+                .attr("opacity",0)
+                .transition()
+                .delay(9000)
+                .attr("opacity",0)
+                .on("end", repeat);
+
+            subheading2
+                .transition()
+                .delay(11000)
+                .duration(2000)
+                .attr("opacity", 1)
+                .transition()
+                .delay(6000)
+                .duration(2000)
+                .attr("opacity",0)
+                .on("end", repeat);
+
+
+        };
+    };
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "legend")
+        .attr("font-weight", 400)
+        .attr("x", 480)
+        .attr("y", height - 60)
+        .text("Prisoners per 100,000 residents");
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("font-weight", 400)
+        .attr("x", 393)
+        .attr("y", height - 35)
+        .text("100");
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("font-weight", 400)
+        .attr("x", 567)
+        .attr("y", height - 35)
+        .text("750");
+
+    subheadingTransition();
+
+</script>
+
+</body>
+

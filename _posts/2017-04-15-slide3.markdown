@@ -1,0 +1,55 @@
+---
+layout: default
+type: noheading
+color: rgb(248,248,248)
+img: blank.png
+category: Report
+title:
+description: |
+---
+
+## In 2015, Florida had the third largest prison population in the country.
+Mass incarceration affects all of the United States, but only California
+and Texas have larger prison populations than Florida. Louisiana, Oklahoma,
+and Delaware have the highest rates of incarceration. Florida's imprisonment rate
+(500 prisoners per 100,000 residents of all ages) is 20% higher than the
+national average.
+
+## Until 2000, New York and Florida had similar prison populations and imprisonment rates. Today, Florida incarcerates twice as many people.
+As you watch the size of each state's prison population expand,
+compare the trajectories of New York and Florida. Throughout the 1980s and 1990s,
+the two states had similar prison populations and similar rates of imprisonment.
+Both states were early adopters of laws that increased penalties for drugs
+and lengthened sentences for violent offenses. After 2000, however, the
+two states diverged. New York scaled back its War on Drugs and maintained
+parole as a method to release people it deemed to pose little threat to
+public safety. Florida, on the other hand, doubled down on drug offenses -
+passing laws to increase penalties for opioids and making it possession
+charges easier to prosecute. Florida also passed a law called "10 - 20 - Life,"
+which established mandatory minimum sentences for people who used a gun
+during a crime. (Some people sentenced to twenty years in prison
+never hurt anyone and fired a warning shot in self defense.) Florida's abolition
+of parole in 1983 also limited the ability of the state to release people
+who no longer are dangerous. These policy divergences have culminated
+in a profound difference: Florida has almost twice as many prisoners
+as New York.
+
+Although policy differences resulted in vastly different prison populations
+and their associated costs, the two paths taken by Florida and New York
+did not result in different outcomes when it came to crimes committed.
+Both states saw crime rates decrease significantly since 2000. New York's
+crime rate is down 29%, and Florida's is down 28%.
+
+## Prison populations have increased far faster than the general population.
+The US prison population has septupled since 1970. In 1970, Florida
+had the third highest imprisonment rate in the country -
+of each 100,000 residents, 135 were prisoners. Oklahoma (with an imprisonment rate of 142
+per 100,000 residents) led the nation in imprisonment. Today, Massachusetts, the state
+ with the the country's _lowest_ imprisonment (146 per 100,000 residents) has
+a higher imprisonment rate than Oklahoma had in 1970. (It is worth noting
+that Massachusetts' imprisonment rate is deflated because it
+sentences many people to incarceration in local jails instead of prison;
+its total incarceration rate is significantly higher.) If Florida today
+and the same imprisonment rate it had in 1970, it would confine 71,000 fewer
+people in its prisons. If the costs per prisoner remained the same, the state
+would avoid **$1.5 billion** in corrections expenses every year.

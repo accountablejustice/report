@@ -1,0 +1,128 @@
+<section id="report">
+<!-- Page Content -->
+{% for post in site.posts reversed %}
+    {% if post.type == '' %}
+    <div class="content-section"
+       style = "background-color: {{ post.color}} ">
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% elsif post.type == 'right' %}
+
+    <div class="content-section"
+        style = "background-color: {{ post.color}} ">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    {% elsif post.type == 'chartleft' %}
+
+    <div class="content-section"
+         style = "background-color: {{ post.color }}">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <div class ='container_chart_1'>
+                        <div class="clearfix"></div>
+                        <iframe src= {{ post.link }} frameborder='0' scrolling = 'no' id = 'iframe_chart_1'>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    {% elsif post.type == 'chartright' %}
+
+    <div class="content-section"
+         style = "background-color: {{ post.color }}">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <div class ='container_chart_1'>
+                        <iframe src= {{ post.link }} frameborder='0' scrolling = 'no' id = 'iframe_chart_1'>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    {% else %}
+
+    <div class="content-section"
+         style = "background-color: {{ post.color }}">
+
+        <div class="container">
+
+            <div class="row">
+
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    {% endif %}
+{% endfor %}
+</section>

@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+    body {
+        font: 10px sans-serif;
+    }
+
+
+
+    h3 {
+        position:relative;
+        color: #555;
+        left: 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    text.comment {
+        font-size: 14px;}
+
+
+
+    .chart-text {
+        font-size: 14px;
+    }
+    .chart-text div {
+        border-top: 1px dotted #cccccc;
+        border-right: 1px dotted #cccccc;
+    }
+
+    #text-explain {
+        position: relative;
+        left: 347px;
+        top: 120px;
+        width: 360px;
+    }
+
+
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .bar {
+        fill: lightblue;
+    }
+
+    .bar:hover {
+        fill: darkblue ;
+    }
+
+    .x.axis path {
+        stroke: #000;
+    }
+
+    div.comment {
+        position: absolute;
+        width: 850px;
+        height: 110px;
+        padding: 2px;
+        font: 14px sans-serif;
+        background: none;
+        opacity: 1;
+        color: #555;
+        font-weight: 600;
+        font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        pointer-events: none;
+    }
+
+    .d3-tip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        padding: 5px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+        border: 0 none;
+        font-size: 14px;
+    }
+
+
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+
+</style>
+        <h3>Florida Prison Population by Year</h3>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="https://d3js.org/d3-axis.v1.min.js"></script>
+<script>
+
+
+    var margin = {top: 40, right: 20, bottom: 30, left: 50},
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+    var formatcomma = d3.format(",.0f")	;
+
+    var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var comment1 = d3.select("body").append("div")
+        .attr("class", "comment");
+
+    comment1.html("A fifteen percent reduction in the state's prison population<br>would only undo growth experienced since 2005.")
+        .style('position','absolute')
+        .style('top', 138 + "px")
+        .style('left', 315 + "px")
+        .style('width', 300);
+
+
+    var comment2 = d3.select("body").append("div")
+        .attr("class", "comment");
+
+    comment2.html("A thirty percent reduction would return Florida<br>to levels last seen in 2000.")
+        .style('position','absolute')
+        .style('top', 200 + "px")
+        .style('left', 215 + "px")
+        .style('width', 300);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom")
+        .tickValues(d3.range(1970, 2016, 5));
+
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .tickFormat(formatcomma);
+
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) {
+            return "<span style='color:red'>" + d.year + ": </span>" + formatcomma(d.population) + " prisoners";
+        })
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.call(tip);
+
+
+
+    function type(d) {
+        d.population = +d.population;
+        return d;
+    }
+
+    d3.tsv("historicalfloridadata.tsv", type, function(error, data) {
+        x.domain(data.map(function(d) { return d.year; }));
+        y.domain([0, d3.max(data, function(d) { return d.population; })]);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Prison Population");
+
+        svg.append("g")
+            .attr("class", "line")
+            .append("line")
+            .attr("x1", x(1983)+3)
+            .attr("x2", x(2005))
+            .attr("y1", y(99119*.85))
+            .attr("y2", y(99119*.85))
+            .attr("stroke-width", 1)
+            .attr("stroke", "#555")
+            .attr("stroke-dasharray", (2,2));
+
+        svg.append("g")
+            .attr("class", "line")
+            .append("line")
+            .attr("x1", x(1978)-7)
+            .attr("x2", x(2000))
+            .attr("y1", y(99119*.7))
+            .attr("y2", y(99119*.7))
+            .attr("stroke-width", 1)
+            .attr("stroke", "#555")
+            .attr("stroke-dasharray", (2,2));
+
+
+
+        svg.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) { return x(d.year); })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) { return y(d.population); })
+            .attr("height", function(d) { return height - y(d.population); })
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide);
+
+
+    });
+
+
+
+</script>

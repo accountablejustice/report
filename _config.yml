@@ -1,0 +1,25 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://www.iog.fsu.edu/paj/
+title: Project on Accountable Justice
+email: dbodsky@fsu.edu
+author: Your Name
+description: > # "Write an awesome description for your new site here. 
+  The Project on Accountable Justice is a Prison Reform Think-Tank Based at Florida state University.
+copyright: 'Copyright &copy; 2017 Project on Accountable Justice.'
+credits: ''
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
