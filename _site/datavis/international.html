@@ -42,11 +42,6 @@
         font-weight: normal;
     }
 
-    datalabel {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: normal;
-    }
-
     .toolTip {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         position: absolute;
@@ -58,7 +53,6 @@
         border-radius: 8px 8px 8px 8px;
         box-shadow: -3px 3px 15px #888888;
         color: white;
-        font: .9em;
         padding: 5px;
         text-align: center;
     }
@@ -299,7 +293,7 @@
             .append("text")
             .attr("x", function(d) {return x(d.value)+ 3;})
             .attr("y", function (d) {return y(d.label)+28;})
-            .text(function(d) {return formatcomma(d.value)})
+            .text(function(d) {return formatcomma(d.value)});
 
         text
             .transition().duration(750)
@@ -308,7 +302,7 @@
             .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatcomma(d.value)});
 
-    };
+    }
 </script>
 </body>
 

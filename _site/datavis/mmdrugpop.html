@@ -149,15 +149,13 @@
 
 
 </style>
-<body>
 <h3>Mandatory Minimum Drug Inmates, by Circuit</h3>
 <form>
-    <label><input type="radio" name="dataset1" id="dataset1" value="Rate" checked> Rate per 100k Adults</label>
-    <label><input type="radio" name="dataset2" id="dataset2" value="Prisoners"> Number of Prisoners</label>
+    <label><input type="radio" name="dataset" id="dataset" value="Rate" checked> Rate per 100k Adults</label>
+    <label><input type="radio" name="dataset" id="dataset" value="Prisoners"> Number of Prisoners</label>
 </form>
-<script src="/js/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script>
-
     Rate = [
         {label:"15",value:15.2695600883366,number:175},
         {label:"8",value:17.245288682939,number:54},
@@ -237,7 +235,7 @@
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .ticks(0);;
+        .ticks(0);
 
     var yAxis = d3.svg.axis()
         .scale(y)
@@ -331,7 +329,7 @@
             .append("text")
             .attr("x", function(d) {return x(d.value)+ 3;})
             .attr("y", function (d) {return y(d.label)+28;})
-            .text(function(d) {return formatcomma(d.value)})
+            .text(function(d) {return formatcomma(d.value)});
 
         text
             .transition().duration(750)
@@ -343,14 +341,13 @@
 
         svg.append("text")
             .attr("text-anchor", 'middle')
-            .attr("transform", function(d) {
-                return "rotate(-90)"
-            })
+            .attr("transform", "rotate(-90)")
             .attr("x", -height/2)
             .attr("y", -29)
             .text("Circuit");
+
     }
 </script>
-</body>
+
 
 

@@ -1,0 +1,20 @@
+---
+layout: default
+type: chartlefttall
+color: rgb(248,248,248)
+img: blank.png
+category: Report
+link: http://cyrusobrien.com/DataVisualizations/mmdrugpop.html
+title: More than <sup>1</sup>/<sub>3</sub> of drug inmates were serving a Mandatory Minimum offense.
+description: |
+---
+The costs of Florida's mandatory minimum drug offenses exceeded $106
+million in FY2015.
+
+<small><small>Note: This report defines "mandatory minimum drug inmate"
+as someone whose longest sentenced offense was for a drug offense
+that carries a mandatory minimum sentence and was not
+incarcerated for a violent offense. In all, 6,552 people
+were serving sentences for a mandatory minimum drug offenses. 4,805
+ people who were incarcerated for a mandatory minimum drug offense had no
+ co-occuring violent or property offenses. (Cite FAMM).</small></small>

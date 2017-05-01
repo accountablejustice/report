@@ -5,16 +5,13 @@
     <title></title>
 </head>
 <body>
-
-</body<!DOCTYPE html>
-<meta charset="utf-8">
 <style>
     rect {
         stroke: #555;
     }
     text {
         font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 12px;
+        font-size: 11px;
 
     }
     text.year {
@@ -45,14 +42,19 @@
         pointer-events: none;
     }
 
-    a {
+    #text-explain {
         position: absolute;
-        left: 414px;
-        top: 550px;
+        left: 627px;
+        top: 400px;
+        width: 300px;
+        font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 12px
     }
 </style>
 <body>
-<a target="_blank"><img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Blues.png" width="150" height="40" alt="Blues"></a>
+<div id="text-explain" font-family="Lato",Helvetica Neue,Helvetica,Arial,sans-serif">
+    The changing color of each state (indicating the incarceration rate) shows that prison expansion outpaced population growth in every state.
+</div>
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script src="//d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script>
@@ -236,14 +238,14 @@
 
             svg.append("rect")
                 .attr('x', width-200)
-                .attr('y', height - 123)
+                .attr('y', height - 150)
                 .attr('width', size(100000))
                 .attr('height', size(100000))
                 .attr("fill", "none")
             ;
             svg.append("rect")
                 .attr('x', width-200)
-                .attr('y', height - 123 - size(25000) + size(100000))
+                .attr('y', height - 150 - size(25000) + size(100000))
                 .attr('width', size(25000))
                 .attr('height', size(25000))
                 .attr("fill", "none")
@@ -251,25 +253,25 @@
 
             svg.append("rect")
                 .attr('x', width-200)
-                .attr('y', height - 123 - size(10000) + size(100000))
+                .attr('y', height - 150 - size(10000) + size(100000))
                 .attr('width', size(10000))
                 .attr('height', size(10000))
                 .attr("fill", "none")
             ;
 
             svg.append("text")
-                .attr('x', width-200 + size(100000)/2 - 8)
-                .attr('y', height - 126)
+                .attr('x', Math.round(width-200 + size(100000)/2 - 8))
+                .attr('y', Math.round(height - 153))
                 .text("100k")
 
             svg.append("text")
-                .attr('x', width-200 + size(25000)/2 - 8)
-                .attr('y', height - 126+ size(25000))
+                .attr('x', Math.round(width-200 + size(25000)/2 - 8))
+                .attr('y', Math.round(height - 153 + size(25000)))
                 .text("25k")
 
             svg.append("text")
-                .attr('x', width-202 + size(10000)/2 - 8)
-                .attr('y', height - 126 + size(100000)- size(10000))
+                .attr('x', Math.round(width-202 + size(10000)/2 - 8))
+                .attr('y', Math.round(height - 153 + size(100000)- size(10000)))
                 .text("10k")
 
         }
@@ -415,13 +417,13 @@
         .attr("opacity",0);
 
     var comment3 = svg.append("text")
-        .attr('x', width/2-3)
+        .attr('x', width/2)
         .attr('y', 70 )
         .attr("class","comment")
         .attr("text-anchor","middle")
         .attr("fill", "black")
         .attr("opacity",0)
-        .text("In the 1990s, states embraced mandatory minimum sentences & enacted laws to prosecute children as adults.");
+        .text("In the 1990s, states embraced mandatory minimum sentences and passed laws to prosecute children as adults.");
 
 
     comment3.transition()
@@ -460,7 +462,7 @@
         .attr("text-anchor","middle")
         .attr("fill", "black")
         .attr("opacity",0)
-        .text("Mass incarceration has fundamentally reshaped American society.");
+        .text("Nearly forty years of mass incarceration have fundamentally reshaped the American social landscape.");
 
 
     comment5.transition()
@@ -593,27 +595,7 @@
 
     ;
 
-    svg.append("text")
-        .attr("text-anchor", "middle")
-        .attr("class", "legend")
-        .attr("font-weight", 400)
-        .attr("x", 480)
-        .attr("y", height - 60)
-        .text("Prisoners per 100,000 residents");
 
-    svg.append("text")
-        .attr("text-anchor", "middle")
-        .attr("font-weight", 400)
-        .attr("x", 393)
-        .attr("y", height - 35)
-        .text("100");
-
-    svg.append("text")
-        .attr("text-anchor", "middle")
-        .attr("font-weight", 400)
-        .attr("x", 567)
-        .attr("y", height - 35)
-        .text("750");
 
 
 
