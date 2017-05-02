@@ -16,7 +16,7 @@ record of a violent felony in their Florida Department of Corrections
 record. (This includes only cases sentenced to state prison or
 a form of community supervision.)
 
-<sub> Note: A small  number of cases of violations of probation involved
+<small><small> Note: A small  number of cases of violations of probation involved
 very serious offenses, such as murder and some sex offenses,
 provoking the question of why people with very serious offenses were
 placed on probation. These cases mostly involved the use of blended
@@ -26,5 +26,5 @@ followed by a term of probation. This mean that, after serving the full term
  after their release. Like anyone on probation, these individuals
  could have their probation revoked for failing to fully comply with
  its terms. Most people whose underlying offense was very serious
- had already served a prison sentence before having their probation revoked.</sub>
+ had already served a prison sentence before having their probation revoked.</small></small>
 
