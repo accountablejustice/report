@@ -4,7 +4,7 @@ type: chartrighttall
 color: rgb(248,248,248)
 category: Report
 title: The United States incarcerates more of its citizens than any other country.
-link:  http://cyrusobrien.com/DataVisualizations/vopbyyear.html
+link:  DataVisualizations/international.html
 ---
 There are currently more than 1.5 million people in American prisons, and another 700,000 in local jails.
 No other country incarcerates this many people. The US incarceration rate, of 698 people per one
@@ -20,3 +20,6 @@ conclude that confines between 150,000 and 200,000 people, resulting in
 These data indicate that North Korea is the
 only country whose incarceration rate may be higher than that of the
 United States.</small>
+
+
+<script src="https://gist.github.com/cyrusobrien/0bd185cf0724a6dafcf4fbd2219557d1.js"></script>

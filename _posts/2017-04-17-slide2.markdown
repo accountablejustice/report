@@ -1,9 +1,9 @@
 ---
 layout: default
 type: noheading
-color:
+color: white
 category: Report
-title: Policy decisions drive prison admissions for violations of probation, which cost more than $100 million a year.
+title: n/a
 ---
 The Department of Corrections, along with courts, have broad discretion
 in how to treat technical violations and other misbehavior that, itself,

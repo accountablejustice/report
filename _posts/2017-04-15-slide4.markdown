@@ -1,10 +1,10 @@
 ---
 layout: default
 type: center
-color:
+color: white
 img: blank.png
 category: Report
 title: Florida's prison population is the result of a generation of policy decisions - some with unintended consequences.
 description: |
 ---
-<iframe src="datavis/intotimer.html" height='560' width='960' frameborder='0' scrolling='no'></iframe>
+<iframe src="DataVisualizations/intotimer.html" height='560' width='960' frameborder='0' scrolling='no'></iframe>

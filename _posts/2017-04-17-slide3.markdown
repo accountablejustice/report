@@ -3,7 +3,7 @@ layout: default
 type: chartrighttall
 color: rgb(248,248,248)
 category: Report
-link: /datavis/vopunder.html
+link: DataVisualizations/vopunder.html
 title: Most probation violators were on probation for a non-violent offense.
 ---
 More than 70% of people sent to prison or violations of probation in FY2015
@@ -26,5 +26,5 @@ followed by a term of probation. This mean that, after serving the full term
  after their release. Like anyone on probation, these individuals
  could have their probation revoked for failing to fully comply with
  its terms. Most people whose underlying offense was very serious
- had already served a prison sentence before having their probation revoked.<sub>
+ had already served a prison sentence before having their probation revoked.</sub>
 

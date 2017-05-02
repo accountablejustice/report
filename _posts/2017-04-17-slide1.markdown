@@ -1,10 +1,10 @@
 ---
 layout: default
 type: chartrighttall
-color:
+color: white
 category: Report
 title: Policy decisions drive prison admissions for violations of probation, which cost more than $100 million a year.
-link: /datavis/vopbyyear.html
+link: DataVisualizations/vopbyyear.html
 ---
 Probation violations (VOPs) comprised 15% of prison admissions.
 In FY2015, 5,712 people were in prison due to a VOP,

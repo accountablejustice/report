@@ -1,12 +1,12 @@
 ---
 layout: default
 type: noheading
-color:
+color: white
 img: blank.png
 category: Report
 title: irrelevant
 description: |
 
 ---
-<iframe src="datavis/cgram2015.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
+<iframe src="DataVisualizations/cgram2015.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
 

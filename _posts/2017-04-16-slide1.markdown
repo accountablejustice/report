@@ -1,11 +1,11 @@
 ---
 layout: default
 type: chartlefttall
-color:
+color: white
 category: Report
 title: Non-violent offenses drive admissions to prison
 description: |
-link: datavis/admissions.html
+link: DataVisualizations/admissions.html
 ---
 This report uses two methodologies for determining an individual's offense.
 By either measure, non-violent offenses account for a significant

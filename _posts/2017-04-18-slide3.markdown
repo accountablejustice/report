@@ -1,13 +1,13 @@
 ---
 layout: default
 type: center
-color: rgb(248,248,248)
+color: white
 img: blank.png
 category: Report
 title: Racial disparities are most severe regarding drug offenses.
 description: |
 ---
-<iframe src="http://cyrusobrien.com/DataVisualizations/drugrate.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
+<iframe src="DataVisualizations/drugrate.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
 
 In every circuit except for the 9th (Orlando) and 11th (Miami), the incarceration rate of black adults solely for drugs
 is higher than the total incarceration rate for similar countries. The 17th (Palm Beach) has a drug incarceration rate
