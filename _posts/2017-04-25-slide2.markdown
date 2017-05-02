@@ -4,7 +4,7 @@ type: chartlefttall
 color: white
 img: blank.png
 category: Report
-link: /DataVisualizations/pop2015.html
+link: DataVisualizations/pop2015.html
 title: Most people currently in prison are incarcerated for a violent offense.
 description: |
 ---

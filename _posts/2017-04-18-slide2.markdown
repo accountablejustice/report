@@ -6,4 +6,4 @@ category: Report
 title: Racial and jurisdictional disparities are defining features of Florida's criminal justice system.
 description: |
 ---
-<iframe src="datavis/prisonrate2.html" height='500' width='960' frameborder='0' scrolling='no'></iframe>
+<iframe src="DataVisualizations/prisonrate2.html" height='500' width='960' frameborder='0' scrolling='no'></iframe>
