@@ -7,28 +7,37 @@ title:
 description: |
 ---
 ## Florida's criminal justice policies have often been at cross-purposes.
-For decades, legislators have known that prisons are costly and inefficient,
+For decades, Florida legislators have known that prisons are costly and inefficient,
 and they have occasionally taken steps to reduce the state's over-reliance on
 incarceration. The Legislature established (and later repealed) a ceiling
 for the prison population. It instituted procedures to allow prison and parole
-administrators to release people before the end of their sentence. And, on
-numerous occasions, it
+administrators to release people before the end of their sentence—at times
+to address overcrowding and in response to litigation, but also as a way
+to incentivize good behavior and in recognition of prisoners’ ultimate
+return to Florida communities. On
+numerous occasions, the Legislature
 appropriated money to improve rehabilitation programs.
 
-None of these efforts has been successful, in large part because the
+None of these efforts has been successful in reducing Florida's prison
+population, in large part because the
 Legislature almost simultaneously took actions that pushed the criminal
 justice system in the opposite direction. Legislators increased penalties for drugs
-(in 1987, 1989, 1992, 1994 and more) and slowly stripped judges of
- their authority and discretion, effectively
+(in 1987, 1989, 1992, 1994 and more), ratcheted up punitive
+ responses across the board, and slowly stripped judges of
+ their power and discretion, effectively
 transferring authority from judges to prosecutors.
 
 When these policies predictably
 resulted in an extremely high rate of incarceration, state policy makers
-took steps to hide the costs from taxpayers. From 1987 to 2011,
+took steps to hide the costs from taxpayers, borrowing billions of dollars
+ and shifting the costs to future.
+From 1987 to 2011,
 the state embarked on an unprecedented construction spree, building 46
 new prisons and 34 new smaller facilities.
 
-### A ceiling on the prison population.
+
+
+#### A ceiling on the prison population.
 In 1983, the Florida Legislature passed a law that it hoped would
 act as a "reasonable containment of criminal justice expenditures."
 It placed a ceiling on the number of prisoners the state could confine --
@@ -39,21 +48,33 @@ Florida's state imprisonment rate today is 500 per 100,000 residents.
 (This figure reflects only the state prison population, and does not include
 people confined in county jails, federal prisons, or juvenile lockup facilities.)
 
-The Legislature was motivated not only by the expenses of building
-and maintaining prisons, but also by a sense that incarceration was
-neither an effective means of ensuring public safety nor of rehabilitating
-criminals. The 1983 legislation provided increased funds for
-alternatives to incarceration, and was, in part, motivated by the Legislature's
-obersvation that "The effectiveness of incarceration ...
+
+ <div class="col-lg-6 col-sm-6">
+ <div class="textbox">
+    <h4><i>Costello v. Wainwright</i></h4>
+     <small> In 1972, inmates in the Florida prison system filed a class
+     action suit (Costello v. Wainwright) against the State of Florida.
+     Citing issues of prison overcrowding, sanitation and health care
+     deficiencies, the State of Florida spent the next 21 years in
+     litigation and under the supervision of the Federal government. Over the equivalency of one generation, Florida responded through a variety of strategies in order to satisfy the Court. In terms of addressing overcrowding, responses could be summed up in two categories: 1) attempts to control the growth of the prison population; and 2) prison construction to answer projections of growth driven by an increasingly more punitive sentencing structure. The second strategy prevailed, resulting in tens of thousands new beds.
+     </small>
+ </div>
+ </div>
+
+The Legislature was motivated not only by the expenses of building and
+maintaining prisons, but also by recognition  that incarceration was
+not the only method nor, under certain circumstances, the most effective way of ensuring public safety andrehabilitating criminals. The 1983 legislation provided increased funds for alternatives to incarceration, and was, in part, motivated by the Legislature’s observation that  "The effectiveness of incarceration ...
  is not conclusively positive."
 
-### Partial steps to reduce confinement.
+#### Partial steps to reduce confinement.
 The Legislature took some steps to keep Florida's prison population below
 the 1983 ceiling. In 1987, it introduced "administrative gain time,"
 a process by which prisoners who behaved well while in prison received
 time off of their sentences.
 
-### Countervailing policies that grew the system.
+
+
+#### Countervailing policies that grew the system.
 (These figures count
 annexes to
 [existing institutions as new facilities.](http://www.dc.state.fl.us/pub/annual/1011/facil.html))
