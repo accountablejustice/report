@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <style>
 
+
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 400px;
@@ -47,6 +48,8 @@
         font-weight: normal;
     }
 
+
+
     .toolTip {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         position: absolute;
@@ -55,12 +58,16 @@
         height: auto;
         background: rgba(0, 0, 0, 0.8);
         border: 0 none;
-        border-radius: 8px 8px 8px 8px;
-        box-shadow: -3px 3px 15px #888888;
+        border-radius: 2px;
+        box-shadow: -1px 1px 1px #888888;
         color: white;
+        font-size: 14px;
         padding: 5px;
         text-align: center;
     }
+
+
+
 
     text.datalabel {
         font-size: 120%;
@@ -125,16 +132,22 @@
 
     .bar {
         fill: #98abc5;
-        fill-opacity: .9;
+        fill-opacity: .7;
     }
 
+    .bar:hover {
+        fill-opacity: 1;
+    }
     .x.axis path {
         display: none;
     }
-h3 {
-    text-align: center;
-    color: #555;
-}
+    h3 {
+        text-align: center;
+        color: #555;
+    }
+    .form {
+        text-align: center
+    }
 
 
 </style>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
+
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 400px;
@@ -13,6 +14,9 @@
         position: center;
     }
 
+    path.slice{
+        stroke-width:2px;
+    }
 
     text{
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,12 +29,24 @@
         fill: none;
     }
 
+    .labelValue
+    {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 200%;
+        opacity: 1;
 
+    }
 
     label {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: normal;
     }
+
+    datalabel {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+    }
+
 
 
     .toolTip {
@@ -41,12 +57,16 @@
         height: auto;
         background: rgba(0, 0, 0, 0.8);
         border: 0 none;
-        border-radius: 8px 8px 8px 8px;
-        box-shadow: -3px 3px 15px #888888;
+        border-radius: 2px;
+        box-shadow: -1px 1px 1px #888888;
         color: white;
+        font-size: 14px;
         padding: 5px;
         text-align: center;
     }
+
+
+
 
     text.datalabel {
         font-size: 120%;
@@ -110,20 +130,23 @@
     }
 
     .bar {
-        fill: #6b486b;
-        fill-opacity: .9;
+        fill: #98abc5;
+        fill-opacity: .7;
     }
 
+    .bar:hover {
+        fill-opacity: 1;
+    }
     .x.axis path {
         display: none;
     }
-h3 {
-    text-align: center;
-    color: #555;
-}
-.form {
-    text-align: center
-}
+    h3 {
+        text-align: center;
+        color: #555;
+    }
+    .form {
+        text-align: center
+    }
 
 
 </style>
