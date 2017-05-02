@@ -57,7 +57,7 @@
 </style>
 <body>
 <div id="text-explain" font-family="Lato",Helvetica Neue,Helvetica,Arial,sans-serif>
-    The changing color of each state (indicating the incarceration rate) shows that prison expansion outpaced population growth in every state.
+    The changing color of each state (indicating the imprisonment rate) shows that prison expansion outpaced population growth in every state.
 </div>
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script src="//d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -228,7 +228,7 @@
                         "<br/> Year: " + year
                         + "<br/> Prison Population: " + formatcomma(d.population.find (function (e) {return e.year === year}).pop)
                         + " <br/>"
-                        + " <br/> Incarceration Rate:  <br/>"+ formatcomma(d.incrate.find( function (e) { return e.year === year}).rate)
+                        + " <br/> Imprisonment Rate:  <br/>"+ formatcomma(d.incrate.find( function (e) { return e.year === year}).rate)
                         + " per 100k")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px")
@@ -390,7 +390,7 @@
         .attr("text-anchor","middle")
         .attr("fill", "black")
         .attr("opacity",0)
-        .text("In 1970, the US incarceration rate was similar to that of the UK and other developed democracies.");
+        .text("In 1970, the US imprisonment rate was similar to that of the UK and other developed democracies.");
 
 
     comment1.transition()
