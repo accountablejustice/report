@@ -1,13 +1,11 @@
-
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
 
-
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 400px;
-        height: 450px;
+        height: 330px;
         position: absolute;
     }
     svg {
@@ -152,75 +150,88 @@
 
 
 </style>
-<body>
+<h3>FY2015 Snapshot Population, by Sentence Length and Longest Sentenced Offense</h3>
 <form>
-    <label><input type="radio" name="dataset" id="dataset" value="CommittingOffense" checked> Committing Offense</label>
-    <label><input type="radio" name="dataset" id="dataset" value="LongestSentenced"> Longest Sentenced Offense</label>
-
+    <label><input type="radio" name="dataset" id="dataset" value="Short" checked> Short &#8804;3</label>
+    <label><input type="radio" name="dataset" id="dataset" value="Long"> Long 3 to 12</label>
+    <label><input type="radio" name="dataset" id="dataset" value="VeryLong" checked> Very Long &#8805; 12</label>
 </form>
 <script src="https://d3js.org/d3.v3.min.js"></script>
+<body>
 <script>
 
-    CommittingOffense = [
-        {label:"Violent",value :8971},
-        {label:"Property",value :8488},
-        {label:"Drugs",value :5735},
-        {label:"Weapons",value :672},
-        {label:"VOP",value :6090},
-        {label:"Other/Missing",value :1805}
-    ];
+//154pm
 
-    LongestSentenced = [
-        {label:"Violent",value :10574},
-        {label:"Property",value :10685},
-        {label:"Drugs",value :6887},
-        {label:"Weapons",value :848},
-        {label:"VOP",value :0},
-        {label:"Other/Missing",value :2767}
+    Short = [
+        {label:"Other",value :1872},
+        {label:"Drugs",value :5009},
+        {label:"Property",value :6049},
+        {label:"Violent",value :4168}
     ];
 
 
-    d3.selectAll("input").on("change", selectDataset);
+    Long = [
+        {label:"Other",value :2248},
+        {label:"Drugs",value :6744},
+        {label:"Property",value :10441},
+        {label:"Violent",value :15076}
+    ];
+
+
+    VeryLong = [
+        {label:"Other",value :1189},
+        {label:"Drugs",value :3552},
+        {label:"Property",value :7437},
+        {label:"Violent",value :37554}
+    ];
+
+
+d3.selectAll("input").on("change", selectDataset);
 
     function selectDataset()
     {
         var value = this.value;
-        if (value == "CommittingOffense")
+        if (value == "Short")
         {
-            change(CommittingOffense);
+            change(Short);
         }
-        else if (value == "LongestSentenced")
+        else if (value == "Long")
         {
-            change(LongestSentenced);
+            change(Long);
         }
-
+        else if (value == "VeryLong")
+        {
+            change(VeryLong);
+        }
     }
 
-    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/20), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/20), left: (parseInt(d3.select('body').style('width'), 10)/5)},
+    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/20), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/20), left: (parseInt(d3.select('body').style('width'), 10)/4.8)},
         width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
         height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
 
     var div = d3.select("body").append("div").attr("class", "toolTip");
 
-    var formatPercent = d3.format("");
-
-    var formatcomma = d3.format(",.0f")	;
+    var formatPercent = d3.format(",%");
 
     var y = d3.scale.ordinal()
         .rangeRoundBands([height, 0], .2, 0.5);
 
     var x = d3.scale.linear()
-        .range([0, width]);
+        .domain([0,39000])
+        .range([0, width-9]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
         .tickSize(-height)
-        .orient("bottom");
+        .orient("bottom")
+        .ticks(0);
 
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left");
     //.tickFormat(formatPercent);
+
+    var formatcomma = d3.format(",.0f")	;
 
     var svg = d3.select("body").append("svg")
         .attr("width", width + margin.left + margin.right)
@@ -233,13 +244,16 @@
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis);
 
-    d3.select("input[value=\"CommittingOffense\"]").property("checked", true);
-    change(CommittingOffense);
+    svg.append("g")
+        .attr("class", "labelValue");
+
+    d3.select("input[value=\"Short\"]").property("checked", true);
+    change(Short);
 
     function change(dataset) {
 
         y.domain(dataset.map(function(d) { return d.label; }));
-        x.domain([0, d3.max(dataset, function(d) { return d.value; })]);
+        x.domain([0, 39000]);
 
         svg.append("g")
             .attr("class", "x axis")
@@ -254,10 +268,10 @@
             .call(yAxis)
             .append("text")
             .attr("transform", "rotate(0)")
-            .attr("x", 50)
+            .attr("x", width/2)
             .attr("dx", ".1em")
-            .style("text-anchor", "end")
-            .text("Option %");
+            .style("text-anchor", "middle")
+            .text("Number of Prisoners");
 
 
         var bar = svg.selectAll(".bar")
@@ -265,35 +279,57 @@
         // new data:
         bar.enter().append("rect")
             .attr("class", "bar")
-            .attr("x", function(d) { return 0; })
+            .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
             .attr("width", function(d) { return width-x(d.value); })
-            .attr("height", y.rangeBand());
+            .attr("height", y.rangeBand(0));
+
+
 
         bar
             .on("mousemove", function(d){
                 div.style("left", d3.event.pageX+10+"px");
                 div.style("top", d3.event.pageY-25+"px");
                 div.style("display", "inline-block");
-                div.html((d.label)+"<br>"+formatcomma(d.value) + "<br>" + "(" + formatcomma(d.value/317.61) + "%)");
+                div.html((d.label)+"<br>"+formatcomma(d.value));
             });
         bar
-            .on("mouseout", function(d){
-                div.style("display", "none");
-            });
+            .on("mouseout",
+                div.style("display", "none"));
 
 
-        // removed data:
+
         bar.exit().remove();
+
 
         // updated data:
         bar.transition()
             .duration(750)
-            .attr("x", function(d) { return 0; })
+            .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
             .attr("width", function(d) { return x(d.value); })
             .attr("height", y.rangeBand());
 
-    };
+
+
+        var text = svg.select(".labelValue").selectAll("text")
+            .data(dataset, function(d) {return d.label});
+
+        text.enter()
+            .append("text")
+            .attr("x", function(d) {return x(d.value)+ 3;})
+            .attr("y", function (d) {return y(d.label)+28;})
+            .text(function(d) {return formatcomma(d.value)});
+
+        text
+            .transition().duration(750)
+            .attr("dy", ".35em")
+            .attr("x", function(d) {return x(d.value)+ 3;})
+            .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
+            .text(function(d) {return formatcomma(d.value)});
+
+    }
 </script>
 </body>
+
+

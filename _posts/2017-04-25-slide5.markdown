@@ -1,0 +1,12 @@
+---
+layout: default
+type: chartleft
+color: white
+img: blank.png
+category: Report
+link: DataVisualizations/pop2015bysentence.html
+title: The profile of Florida's prison population varies greatly by sentence length.
+---
+Most people serving short sentences in FY2015 were incarcerated for a non-violent offense. Most people serving long sentences, by contrast, were incarcerated for a violent offense.
+
+In FY2015, there were 3,552 people serving very long sentences for drug offenses. The imprisonment of these people in FY2015 cost the state $70 million. The total cost of incarcerating these people for the duration of their sentences will exceed $1 billion.

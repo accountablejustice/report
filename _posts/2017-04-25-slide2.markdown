@@ -1,10 +1,9 @@
 ---
 layout: default
-type: chartlefttall
+type: left
 color: white
-img: blank.png
+img: flow2.jpg
 category: Report
-link: DataVisualizations/pop2015.html
-title: Most people currently in prison are incarcerated for a violent offense.
-description: |
+title: One third of Florida's prison population turns over every year.
 ---
+Florida's prisons are in an extremely dynamic relationship to broader society. Each and every year, approximately 32,000 people are released from Florida prisons. And every year, they are replaced by another 32,000 people who are admitted to prison. Florida's prisons system is typical in this regard: Nationally, one third of the prison population - or approximately 700,000 people - are released each year.
