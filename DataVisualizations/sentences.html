@@ -312,61 +312,62 @@
             .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatcomma(d.value)});
 
-    };
+        svg.append("g")
+            .attr("class", "annotation")
+            .append("text")
+            .attr("x", -10)
+            .attr("y", 88)
+            .attr("dx", ".1em")
+            .style("text-anchor", "end")
+            .text("(3 Years ");
 
-    svg.append("g")
-        .attr("class", "annotation")
-        .append("text")
-        .attr("x", -10)
-        .attr("y", 112)
-        .attr("dx", ".1em")
-        .style("text-anchor", "end")
-        .text("(3 Years ");
+        svg.append("g")
+            .attr("class", "annotation")
+            .append("text")
+            .attr("x", -10)
+            .attr("y", 101)
+            .attr("dx", ".1em")
+            .style("text-anchor", "end")
+            .text("or Less)");
 
-    svg.append("g")
-        .attr("class", "annotation")
-        .append("text")
-        .attr("x", -10)
-        .attr("y", 124)
-        .attr("dx", ".1em")
-        .style("text-anchor", "end")
-        .text("or Less)");
+        svg.append("g")
+            .attr("class", "annotation")
+            .append("text")
+            .attr("x", -10)
+            .attr("y", 165)
+            .attr("dx", ".1em")
+            .style("text-anchor", "end")
+            .text("(Between 3");
 
-    svg.append("g")
-        .attr("class", "annotation")
-        .append("text")
-        .attr("x", -10)
-        .attr("y", 219)
-        .attr("dx", ".1em")
-        .style("text-anchor", "end")
-        .text("(Between 3");
+        svg.append("g")
+            .attr("class", "annotation")
+            .append("text")
+            .attr("x", -10)
+            .attr("y", 177)
+            .attr("dx", ".1em")
+            .style("text-anchor", "end")
+            .text("and 12 Yrs)");
 
-    svg.append("g")
-        .attr("class", "annotation")
-        .append("text")
-        .attr("x", -10)
-        .attr("y", 231)
-        .attr("dx", ".1em")
-        .style("text-anchor", "end")
-        .text("and 12 Yrs)");
+        svg.append("g")
+            .attr("class", "annotation")
+            .append("text")
+            .attr("x", -10)
+            .attr("y", 241)
+            .attr("dx", ".1em")
+            .style("text-anchor", "end")
+            .text("(Longer than");
 
-    svg.append("g")
-        .attr("class", "annotation")
-        .append("text")
-        .attr("x", -10)
-        .attr("y", 220+106)
-        .attr("dx", ".1em")
-        .style("text-anchor", "end")
-        .text("(Longer than");
+        svg.append("g")
+            .attr("class", "annotation")
+            .append("text")
+            .attr("x", -10)
+            .attr("y", 253)
+            .attr("dx", ".1em")
+            .style("text-anchor", "end")
+            .text("12 Yrs)");
+    }
 
-    svg.append("g")
-        .attr("class", "annotation")
-        .append("text")
-        .attr("x", -10)
-        .attr("y", 232+106)
-        .attr("dx", ".1em")
-        .style("text-anchor", "end")
-        .text("12 Yrs)");
+
 </script>
 </body>
 

@@ -20,6 +20,7 @@
         fill: #555;
         font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     }
+
     div.tooltip {
         position: absolute;
         text-align: center;
@@ -30,12 +31,21 @@
         background: black;
         opacity: .45;
         color: white;
-        border: 0;
+        border: 0px;
         border-radius: 8px;
         pointer-events: none;
     }
+
+
+
+    a {
+        position: absolute;
+        left: 414px;
+        top: 550px;
+    }
 </style>
 <body>
+<a target="_blank"><img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Blues.png" width="150" height="40" alt="Blues"></a>
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script src="//d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script>
@@ -203,7 +213,7 @@
                     div	.html(d.state +
                         "<br/> Prison Population: " + formatcomma(d.population.find (function (e) {return e.year === year}).pop)
                         + " <br/>"
-                        + " <br/>Imprisonment Rate:  <br/>"+ d.incrate.find( function (e) { return e.year === year}).rate
+                        + " <br/> Incarceration Rate:  <br/>"+ d.incrate.find( function (e) { return e.year === year}).rate
                         + " per 100k")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px")
@@ -213,17 +223,17 @@
                     div.transition()
                         .duration(500)
                         .style("opacity", 0);
-                })
+                });
             svg.append("rect")
                 .attr('x', width-200)
-                .attr('y', height - 150)
+                .attr('y', height - 123)
                 .attr('width', size(100000))
                 .attr('height', size(100000))
                 .attr("fill", "none")
             ;
             svg.append("rect")
                 .attr('x', width-200)
-                .attr('y', height - 150 - size(25000) + size(100000))
+                .attr('y', height - 123 - size(25000) + size(100000))
                 .attr('width', size(25000))
                 .attr('height', size(25000))
                 .attr("fill", "none")
@@ -231,26 +241,26 @@
 
             svg.append("rect")
                 .attr('x', width-200)
-                .attr('y', height - 150 - size(10000) + size(100000))
+                .attr('y', height - 123 - size(10000) + size(100000))
                 .attr('width', size(10000))
                 .attr('height', size(10000))
                 .attr("fill", "none")
             ;
 
             svg.append("text")
-                .attr('x', Math.round(width-200 + size(100000)/2 - 8))
-                .attr('y', Math.round(height - 153))
-                .text("100k")
+                .attr('x', width-200 + size(100000)/2 - 8)
+                .attr('y', height - 126)
+                .text("100k");
 
             svg.append("text")
-                .attr('x', Math.round(width-200 + size(25000)/2 - 8))
-                .attr('y', Math.round(height - 153 + size(25000)))
-                .text("25k")
+                .attr('x', width-200 + size(25000)/2 - 8)
+                .attr('y', height - 126+ size(25000))
+                .text("25k");
 
             svg.append("text")
-                .attr('x', Math.round(width-202 + size(10000)/2 - 8))
-                .attr('y', Math.round(height - 153 + size(100000)- size(10000)))
-                .text("10k")
+                .attr('x', width-202 + size(10000)/2 - 8)
+                .attr('y', height - 126 + size(100000)- size(10000))
+                .text("10k");
 
 
 
@@ -363,7 +373,7 @@
 
     var clickicon =  d3.selectAll('svg')
         .append('image')
-        .attr('xlink:href','/spring2017report/img/slides/click.svg')
+        .attr('xlink:href','/img/slides/click.svg')
         .attr('height', '25')
         .attr('width', '25')
         .attr('opacity', 0)
@@ -535,6 +545,28 @@
 
         };
     };
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("class", "legend")
+        .attr("font-weight", 400)
+        .attr("x", 480)
+        .attr("y", height - 60)
+        .text("Prisoners per 100,000 residents");
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("font-weight", 400)
+        .attr("x", 393)
+        .attr("y", height - 35)
+        .text("100");
+
+    svg.append("text")
+        .attr("text-anchor", "middle")
+        .attr("font-weight", 400)
+        .attr("x", 567)
+        .attr("y", height - 35)
+        .text("750");
 
     subheadingTransition();
 

@@ -7,6 +7,7 @@ category: Report
 title:
 description: |
 ---
+<small><small> Note: This Demmers Cartogram depicts only incarceration in state prisons. People incarcerated in federal prisons, local jails, immigration detention centers, or juvenile facilities are not represented in this cartogram. For notes on the data, see note 3.</small></small>
 
 ## In 2015, Florida had the third largest prison population in the country.
 Mass incarceration affects all of the United States, but only California
@@ -52,4 +53,4 @@ sentences many people to incarceration in local jails instead of prison;
 its total incarceration rate is significantly higher.) If Florida had today
 and the same imprisonment rate it had in 1970, it would confine 71,000 fewer
 people in its prisons. If the costs per prisoner remained the same, the state
-would avoid **$1.5 billion** in corrections expenses every year.
+would avoid **$1.5 billion** in corrections expenses every year.<sup>3</sup>

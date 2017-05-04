@@ -5,4 +5,4 @@ category: Report
 ---
 ## How to read this report.
 
-This report is a Data-Driven Document and contains many interactive data visualizations. Hovering over most charts will reveal additional levels of detail. Two charts (a cartogram of US prison populations and a timeline showing Florida's prison growth) require you to click on them in order to view the visualization. Where you are required to click, you will see this symbol <img src="img/slides/click.svg" width="30">
+This report is a Data-Driven Document and contains many interactive data visualizations. Hovering over most charts will reveal additional levels of detail. Two charts (a cartogram of US prison populations and a timeline showing Florida's prison growth) require you to click on them in order to view the visualization.<sup>1</sup> Where you are required to click, you will see this symbol <img src="img/slides/click.svg" width="30">.

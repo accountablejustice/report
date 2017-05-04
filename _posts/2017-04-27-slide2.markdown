@@ -9,7 +9,7 @@ title: More than <sup>1</sup>/<sub>3</sub> of drug inmates were serving a Mandat
 description: |
 ---
 The costs of Florida's mandatory minimum drug offenses exceeded $106
-million in FY2015.
+million in FY2015.<sup>19</sup>
 
 <small><small>Note: This report defines "mandatory minimum drug inmate"
 as someone whose longest sentenced offense was for a drug offense

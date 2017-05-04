@@ -11,12 +11,10 @@ This report uses two methodologies for determining an individual's offense.
 By either measure, non-violent offenses account for a significant
 majority of prison admissions.
 
-Multiple offense methodologies are required
-
 ### Committing Offense
 The Committing Offense is the most serious charge for which an individual is sentenced to prison.
 It prioritizes violent offenses over property, drug, and other offenses. The Committing Offense
-variable captures violations of probation, parole, and conditional release.
+variable captures violations of probation, parole, and conditional release.<sup>10</sup>
 
 ### Longest Sentenced Offense
 The Longest Sentenced Offense is the offense that carries the longest sentence, regardless of the
