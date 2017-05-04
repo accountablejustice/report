@@ -1,6 +1,6 @@
 ---
 layout: default
-type: chartlefttall
+type: chartrighttall
 color: white
 category: Report
 link: DataVisualizations/vopadmissions.html

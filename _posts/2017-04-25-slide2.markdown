@@ -1,6 +1,6 @@
 ---
 layout: default
-type: left
+type: right
 color: white
 img: flow3.jpg
 category: Report
