@@ -129,7 +129,6 @@
     }
 
     .bar {
-        fill: #98abc5;
         fill-opacity: .7;
     }
 
@@ -293,7 +292,16 @@
             .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
             .attr("width", function(d) { return width-x(d.value); })
-            .attr("height", y.rangeBand(0));
+            .attr("height", y.rangeBand(0))
+            .attr("fill", "#98abc5")
+            .on("click", function(){
+                // Determine if current line is visible
+                var red = bar.red ? false : true,
+                    newColor = red ? "darkred": "#98abc5" ;
+                // Hide or show the elements
+                d3.select(this).attr("fill", newColor);
+                bar.red = red;
+            });
 
 
         bar
