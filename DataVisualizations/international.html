@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <style>
 
+
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 400px;
@@ -42,6 +43,11 @@
         font-weight: normal;
     }
 
+    datalabel {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+    }
+
 
     .toolTip {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,12 +58,13 @@
         background: rgba(0, 0, 0, 0.8);
         border: 0 none;
         border-radius: 2px;
-        box-shadow: -1px 1px 1px #888888;
+        box-shadow: -3px 3px 15px #888888;
         color: white;
         font-size: 14px;
         padding: 5px;
         text-align: center;
     }
+
 
 
     text.datalabel {
@@ -122,20 +129,18 @@
     }
 
     .bar {
-        fill: #98abc5;
         fill-opacity: .7;
     }
 
     .bar:hover {
         fill-opacity: 1;
     }
-
     .x.axis path {
         display: none;
     }
     h3 {
         text-align: center;
-        color: #555
+        color: #555;
     }
     .form {
         text-align: center
@@ -143,27 +148,36 @@
 
 
 </style>
-<body>
-<h3> Incarceration Rates by Country</h3>
-<script src="https://d3js.org/d3.v3.min.js"></script>
+<h3>Mandatory Minimum Drug Inmates, by Circuit</h3>
+<form>
+    <label><input type="radio" name="dataset" id="dataset" value="Rate" checked> Rate per 100k Residents</label>
+    <label><input type="radio" name="dataset" id="dataset" value="Prisoners"> Number of Prisoners</label>
+</form>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script>
-
-
-
-    InternationalComp = [
-        {label:"Norway",value:71},
-        {label:"Italy",value:86},
-        {label:"France",value:99},
-        {label:"Canada",value:106},
-        {label:"China",value:118},
-        {label:"Portugal",value:138},
-        {label:"UK",value:146},
-        {label:"Australia",value:152},
-        {label:"Russia",value:442},
-        {label:"Cuba",value:510},
-        {label:"United States",value:698}
+    Rate = [
+        {label:"France",value :101},
+        {label:"Canada ",value :114},
+        {label:"China",value :118},
+        {label:"Portugal",value :135},
+        {label:"UK",value :145},
+        {label:"Australia",value :162},
+        {label:"Russia",value :431},
+        {label:"Cuba",value :510},
+        {label:"United States",value :666}
     ];
 
+    Prisoners = [
+        {label:"Portugal",value :13927},
+        {label:"Australia",value :39152},
+        {label:"Canada ",value :40663},
+        {label:"Cuba",value :57337},
+        {label:"France",value :68432},
+        {label:"UK",value :85211},
+        {label:"Russia",value :623642},
+        {label:"China",value :1649804},
+        {label:"United States",value :2145100}
+    ];
 
 
     d3.selectAll("input").on("change", selectDataset);
@@ -171,13 +185,13 @@
     function selectDataset()
     {
         var value = this.value;
-        if (value == "CommittingOffense")
+        if (value == "Rate")
         {
-            change(InternationalComp);
+            change(Rate);
         }
-        else if (value == "LongestOffense")
+        else if (value == "Prisoners")
         {
-            change(LongestOffense);
+            change(Prisoners);
         }
     }
 
@@ -193,12 +207,10 @@
         .rangeRoundBands([height, 0], .2, 0.5);
 
     var x = d3.scale.linear()
-        .domain([0,750])
-        .range([0, width]);
+        .range([0, width-37]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
-        .tickSize(-height)
         .orient("bottom")
         .ticks(0);
 
@@ -223,13 +235,13 @@
     svg.append("g")
         .attr("class", "labelValue");
 
-    d3.select("input[value=\"CommittingOffense\"]").property("checked", true);
-    change(InternationalComp);
+    d3.select("input[value=\"Rate\"]").property("checked", true);
+    change(Rate);
 
     function change(dataset) {
 
         y.domain(dataset.map(function(d) { return d.label; }));
-        x.domain([0, 750]);
+        x.domain([0, d3.max(dataset, function(d) { return d.value; })]);
 
         svg.append("g")
             .attr("class", "x axis")
@@ -247,7 +259,7 @@
             .attr("x", width/2)
             .attr("dx", ".1em")
             .style("text-anchor", "middle")
-            .text("Number of Prisoners per 100k Residents");
+            .text("Mandatory Minimum Drug Inmates");
 
 
         var bar = svg.selectAll(".bar")
@@ -257,9 +269,17 @@
             .attr("class", "bar")
             .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
-            .attr("width", function(d) { return width-x(d.value); })
-            .attr("height", y.rangeBand(0));
-
+            .attr("width", function(d) { return x(d.value); })
+            .attr("height", y.rangeBand(0))
+            .attr("fill", "#98abc5")
+            .on("click", function(){
+                // Determine if current line is visible
+                var red = bar.red ? false : true,
+                    newColor = red ? "darkred": "#98abc5" ;
+                // Hide or show the elements
+                d3.select(this).attr("fill", newColor);
+                bar.red = red;
+            });
 
 
         bar
@@ -267,13 +287,12 @@
                 div.style("left", d3.event.pageX+10+"px");
                 div.style("top", d3.event.pageY-25+"px");
                 div.style("display", "inline-block");
-                div.html((d.label)+"<br>"+formatcomma(d.value));
+                div.html(d.label + "<br>" + formatcomma(d.value));
             });
         bar
             .on("mouseout", function(d){
                 div.style("display", "none");
             });
-
 
 
         bar.exit().remove();
@@ -295,7 +314,7 @@
         text.enter()
             .append("text")
             .attr("x", function(d) {return x(d.value)+ 3;})
-            .attr("y", function (d) {return y(d.label)+28;})
+            .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatcomma(d.value)});
 
         text
@@ -305,8 +324,10 @@
             .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatcomma(d.value)});
 
+
+
     }
 </script>
-</body>
+
 
 
