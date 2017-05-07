@@ -60,8 +60,11 @@
     }
 
     .bar {
-        fill: steelblue;
-        fill-opacity: .9;
+        fill-opacity: .7;
+    }
+
+    .bar:hover {
+        fill-opacity: 1;
     }
 
     .x.axis path {
@@ -336,7 +339,7 @@
                     .style("left", (d3.event.pageX + 5) + "px")
                     .style("top", (d3.event.pageY - 24) + "px");
             }
-        })
+        });
 
     bar
         .on("mousemove", function(d){
