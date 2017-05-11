@@ -10,3 +10,4 @@ title: Most people admitted to prison have short sentences. Most people currentl
 People with relatively short sentences (defined here as three years or less) make up most of the turnover of the prison system, but a relatively small portion of the prison population. They comprise 55% of all people admitted to prison each year, but make up only 17% of the prison population.
 
 On the other hand, people with very long sentences (12 years or longer) make up very little of the turnover but make up the bulk of the prison population. People with very long sentences make up only 9% of prison admissions, but, because they stay for so long, they amount to 49% of the population.
+<br>

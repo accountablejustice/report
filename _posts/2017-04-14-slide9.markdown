@@ -1,0 +1,9 @@
+---
+layout: default
+type: noheading
+category: Report
+---
+ <hr class="section-heading-spacer">
+   <div class="clearfix"></div>
+
+<h2 id="context" class="offset">Florida in Comparative Context</h2>

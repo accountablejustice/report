@@ -9,10 +9,14 @@ description: |
 ---
 <iframe src="DataVisualizations/drugrate.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
 
-In every circuit except for the 9th (Orlando) and 11th (Miami), the incarceration rate of black adults solely for drugs
-is higher than the total incarceration rate for similar countries. The 17th (Palm Beach) has a drug incarceration rate
-for black adults of 149 per 100,000. The United Kingdom's incarceration rate for _all offenses_ is 147 per 100,000.
+In almost every circuit in Florida , the incarceration rate of black adults solely for drugs
+is higher than the total incarceration rate for similar countries. The 15th Circuit (Palm Beach) has a drug incarceration rate
+for black adults of 173 per 100,000. The United Kingdom's incarceration rate for _all offenses_ is 187 per 100,000.
+
+When racial and jurisdictional differences compound, the disparities can be astounding. Black adults in the 19th Circuit (Okeechobee) are 110 times more likely to be incarcerated for drugs than white adults in Palm Beach. Put another way, if the general populations were equivalent, for every white prisoner incarcerated for drugs from Palm Beach there would be 110 black prisoners from Okeechobee.
 
 Though to a less extreme degree, white Floridians are also heavily impacted by the War on Drugs. In some rural areas,
 such as the 3rd (Lake City) and 14th (Panama City) Circuits, the white adult drug incarceration rates are 194 and 149,
 respectively.
+
+Statewide, black adults are almost twice as likely to be in prison _for a drug offense_ than residents of the UK are to be in prison for any reason.

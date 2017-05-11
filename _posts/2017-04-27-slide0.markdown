@@ -1,0 +1,9 @@
+---
+layout: default
+type: noheading
+---
+
+   <hr class="section-heading-spacer">
+   <div class="clearfix"></div>
+
+<h2 id="drugs" class="offset">The Role of Drug Offenses</h2>

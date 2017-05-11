@@ -4,7 +4,7 @@ type: chartrighttall
 color: white
 category: Report
 link: DataVisualizations/vopadmissions.html
-title: Floridians who live in Panama City (14th Circuit) are 32 times more likely to be sent to prison for a VOP than Floridians in Palm Beach.
+title: Floridians who live in Panama City (14th Circuit) are 32 times more likely to be sent to prison for a VOP than Floridians in Palm Beach (15th Circuit).
 ---
 Within the general policies set by the Legislature and the Florida
 Department of Corrections, local officials retain wide degrees of

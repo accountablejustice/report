@@ -291,7 +291,7 @@
             .attr("class", "bar")
             .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
-            .attr("width", function(d) { return width-x(d.value); })
+            .attr("width", function(d) { return x(d.value); })
             .attr("height", y.rangeBand(0))
             .attr("fill", "#98abc5")
             .on("click", function(){
@@ -336,7 +336,7 @@
         text.enter()
             .append("text")
             .attr("x", function(d) {return x(d.value)+ 3;})
-            .attr("y", function (d) {return y(d.label)+28;})
+            .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatcomma(d.value)});
 
         text

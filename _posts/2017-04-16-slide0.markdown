@@ -1,0 +1,9 @@
+---
+layout: default
+type: noheading
+---
+   <hr class="section-heading-spacer">
+   <div class="clearfix"></div>
+
+<h2 id="admissions" class="offset">A Profile of Florida's Prison Admissions</h2>
+

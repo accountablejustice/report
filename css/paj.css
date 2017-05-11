@@ -11,10 +11,22 @@ html {
 }
 
 body {
-    font-family: Baskerville}
+    font-family: Baskerville, serif;}
 
-h1,
-h2,
+h1, h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.offset:before {
+    display: block;
+    content: " ";
+    height: 100px;      /* Give height of your fixed element */
+    margin-top: -100px; /* Give negative margin of your fixed element */
+    visibility: hidden;
+}
+
+
 h3,
 h4,
 h5,
@@ -47,6 +59,7 @@ h6 {
     margin: 0;
     text-shadow: 3px 2px 3px rgba(0,0,0,0.9);
     font-size: 5em;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .intro-divider {
@@ -57,6 +70,7 @@ h6 {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+    font-family: 'Noto Sans';
 }
 
 @media(max-width:767px) {
@@ -81,6 +95,10 @@ h6 {
     .intro-divider {
         width: 100%;
     }
+}
+
+.page-scroll {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .network-name {
@@ -209,3 +227,4 @@ p.copyright {
     padding: 20px;
 
 }
+

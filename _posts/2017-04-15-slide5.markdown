@@ -6,7 +6,7 @@ category: Report
 title:
 description: |
 ---
-## Florida's criminal justice policies have often been at cross-purposes.
+### Florida's criminal justice policies have often been at cross-purposes.
 For decades, Florida legislators have known that prisons are costly and inefficient,
 and they have occasionally taken steps to reduce the state's over-reliance on
 incarceration. The Legislature established (and later repealed) a ceiling
@@ -53,10 +53,10 @@ people confined in county jails, federal prisons, or juvenile lockup facilities.
  <div class="textbox">
     <h4><i>Costello v. Wainwright</i></h4>
      <small> In 1972, inmates in the Florida prison system filed a class
-     action suit (Costello v. Wainwright) against the State of Florida.
+     action suit (Costello v. Wainwright) against the State of Florida, c
      Citing issues of prison overcrowding, sanitation and health care
-     deficiencies, the State of Florida spent the next 21 years in
-     litigation and under the supervision of the Federal government. Over the equivalency of one generation, Florida responded through a variety of strategies in order to satisfy the Court. In terms of addressing overcrowding, responses could be summed up in two categories: 1) attempts to control the growth of the prison population; and 2) prison construction to answer projections of growth driven by an increasingly more punitive sentencing structure. The second strategy prevailed, resulting in tens of thousands new beds.
+     deficiencies. The State of Florida spent the next 21 years in
+     litigation and under the supervision of the Federal government. Over the period of a whole generation, Florida responded through a variety of strategies in order to satisfy the Court. In terms of addressing overcrowding, responses could be summed up in two categories: 1) attempts to control the growth of the prison population; and 2) prison construction to answer projections of growth driven by an increasingly more punitive sentencing structure. The second strategy prevailed, resulting in tens of thousands new beds.
      </small>
  </div>
  </div>

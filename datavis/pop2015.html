@@ -147,10 +147,10 @@ h3 {
     <label><input type="radio" name="dataset" id="dataset" value="CommittingOffense" checked> Committing Offense</label>
     <label><input type="radio" name="dataset" id="dataset" value="LongestOffense"> Longest Sentenced Offense</label>
 </form>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-
+//6pm
 
     CommittingOffense = [
         {label:"Other",value :4172},
@@ -158,7 +158,7 @@ h3 {
         {label:"Probation Vio.",value :5712},
         {label:"Drugs",value :13582},
         {label:"Property",value :20588},
-        {label:"Violent",value :55621},
+        {label:"Violent",value :55621}
     ];
 
 
@@ -168,7 +168,7 @@ h3 {
         {label:"Probation Vio.",value :0},
         {label:"Drugs",value :15042},
         {label:"Property",value :23927},
-        {label:"Violent",value :56798},
+        {label:"Violent",value :56798}
     ];
 
 
@@ -302,7 +302,7 @@ h3 {
             .append("text")
             .attr("x", function(d) {return x(d.value)+ 3;})
             .attr("y", function (d) {return y(d.label)+28;})
-            .text(function(d) {return formatcomma(d.value)})
+            .text(function(d) {return formatcomma(d.value)});
 
         text
             .transition().duration(750)
@@ -311,7 +311,7 @@ h3 {
             .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatcomma(d.value)});
 
-    };
+    }
 </script>
 </body>
 
