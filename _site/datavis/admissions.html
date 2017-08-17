@@ -126,7 +126,6 @@
     }
 
     .bar {
-        fill: #6b486b;
         fill-opacity: .7;
     }
 
@@ -153,7 +152,7 @@ h3 {
     <label><input type="radio" name="dataset" id="dataset" value="CommittingOffense" checked> Committing Offense</label>
     <label><input type="radio" name="dataset" id="dataset" value="LongestOffense"> Longest Sentenced Offense</label>
 </form>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
     CommittingOffense = [
@@ -232,6 +231,8 @@ h3 {
     svg.append("g")
         .attr("class", "labelValue");
 
+
+
     d3.select("input[value=\"CommittingOffense\"]").property("checked", true);
     change(CommittingOffense);
 
@@ -259,6 +260,8 @@ h3 {
             .text("% of Admissions");
 
 
+
+
         var bar = svg.selectAll(".bar")
             .data(dataset, function(d) { return d.label; });
         // new data:
@@ -267,7 +270,9 @@ h3 {
             .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
             .attr("width", function(d) { return width-x(d.value); })
-            .attr("height", y.rangeBand(0));
+            .attr("height", y.rangeBand(0))
+            .attr("fill", "darkblue");
+
 
 
 
@@ -282,6 +287,7 @@ h3 {
             .on("mouseout", function(d){
                 div.style("display", "none");
             });
+
 
 
 

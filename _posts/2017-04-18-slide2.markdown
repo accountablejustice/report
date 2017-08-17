@@ -7,6 +7,6 @@ title: In every judicial circuit, black adults are more likely to be incarcerate
 ---
 <iframe src="DataVisualizations/prisonrate2.html" height='500' width='960' frameborder='0' scrolling='no'></iframe>
 
-Statewide, one in 42 black adults was incarcerated by the Florida Department of Corrections in a FY2015 snapshot. For white adults, the figure was one in 229. Florida's 19th Circuit (Okeechobee) had the most severe racial disparities. One in 24 black adults there was imprisoned in FY2015 -- more than eleven times the rate of their white neighbors.
+Statewide, one in 42 black adults was incarcerated by the Florida Department of Corrections in a FY2015 snapshot. For white adults, the figure was one in 229. Florida's 19th Circuit (Okeechobee) had the most severe racial disparities. One in 24 black adults in the 19th Circuit was imprisoned in FY2015 -- more than eleven times the rate of their white neighbors.
 
-Florida's different jurisdictions produce disparate results. White adults in the 3rd Circuit (Lake City and its environs) were twice as likely than whites in the 19th Circuit(Okeechobee), three times more likely than whites in the 17th Circuit (Fort Lauderdale) and almost five times more likely than whites in the 11th (Miami) and 15th Circuits (Palm Beach) to be imprisoned.
+Florida's different jurisdictions produce disparate results. White adults in the 3rd Circuit (Lake City and its environs) were twice as likely than whites in the 19th Circuit (Okeechobee), three times more likely than whites in the 17th Circuit (Fort Lauderdale) and almost five times more likely than whites in the 11th (Miami) and 15th Circuits (Palm Beach) to be imprisoned.

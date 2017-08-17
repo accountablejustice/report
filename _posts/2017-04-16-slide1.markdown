@@ -7,7 +7,7 @@ title: Non-violent offenses drive admissions to prison
 description: |
 link: DataVisualizations/admissions.html
 ---
-This report uses two methodologies for determining an individual's offense.
+This report uses two methodologies for determining an individual's offense: "committing" offense and "longest" offense. Both are result from an analysis of data provided by the Florida Department of Corrections.
 By either measure, non-violent offenses account for a significant
 majority of prison admissions.
 
@@ -20,4 +20,4 @@ variable captures violations of probation, parole, and conditional release.<sup>
 The Longest Sentenced Offense is the offense that carries the longest sentence, regardless of the
 seriousness of the offense. However, when two offenses carry the same sentence, this variable, like
 Committing Offense, prioritizes violence. In cases where an individual is admitted to prison for a
-violation of probation or parole, the Longest Sentenced Offense reveals the underlying charge.
+violation of probation or parole, the Longest Sentenced Offense reveals the underlying charge, not the violation.

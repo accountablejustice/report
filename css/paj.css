@@ -21,8 +21,8 @@ h1, h2 {
 .offset:before {
     display: block;
     content: " ";
-    height: 100px;      /* Give height of your fixed element */
-    margin-top: -100px; /* Give negative margin of your fixed element */
+    height: 300px;      /* Give height of your fixed element */
+    margin-top: -300px; /* Give negative margin of your fixed element */
     visibility: hidden;
 }
 
@@ -68,7 +68,7 @@ h6 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3 {
+.intro-message > h2 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
     font-family: 'Noto Sans';
 }

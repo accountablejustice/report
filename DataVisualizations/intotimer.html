@@ -263,22 +263,23 @@
             .attr("y", height-90)
             .attr("height", 80)
             .attr("width", 200)
-            .attr("fill", "lightgreen")
+            .attr("fill", "black")
             .attr("stroke", 2)
             .attr("stroke", 2)
-            .attr('opacity', .3)
+            .attr('opacity', .7)
             .attr("rx", 1)
             .attr("ry", 1);
 
         next.append("text")
             .attr("x", width-49)
             .attr("y", height-50)
-            .style("fill", "black")
+            .style("fill", "white")
+            .style("fill", "strong")
             .attr("dy", ".35em")
             .style("font-size", "14px")
             .attr("text-anchor", "middle")
             .style("pointer-events", "none")
-            .text("Click here to begin animation.");
+            .text("Click Here To Begin Animation.");
 
         function clicktrans() {
         var clickicon =  d3.selectAll('svg')

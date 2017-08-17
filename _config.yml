@@ -6,7 +6,7 @@ url: localhost:4000
 title: Project on Accountable Justice
 email: dbodsky@fsu.edu
 author: Your Name
-description: > # "Write an awesome description for your new site here. 
+description: > # Project on Accountable Justice Report.
   The Project on Accountable Justice is a Prison Reform Think-Tank Based at Florida state University.
 copyright: 'Copyright &copy; 2017 Project on Accountable Justice.'
 credits: ''
@@ -23,3 +23,8 @@ permalink: pretty
 #   3rd Party Settings    #
 # ----------------------- #
 
+social:
+  - title: twitter
+    url: https://twitter.com/fsujustice
+  - title: facebook
+    url: https://www.facebook.com/Projectonaccountablejustice/

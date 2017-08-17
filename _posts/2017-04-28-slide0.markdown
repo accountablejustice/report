@@ -8,7 +8,7 @@ type: noheading
 
 <h2 id="scale" class="offset">The Scale of Florida's Prison Complex</h2>
 
-### Since the Florida switched to electronic records, nearly two million people have come into the custody or under the supervision of the Department of Corrections.
+### Since the Florida Department of Corrections began keeping electronic records, nearly two million people have come into the custody or under the supervision of the Department of Corrections.
 
 With 99,000 in prison, 137,000 under supervision, 20,000 employed, an annual budget of $2.4 billion, and a digitally-recorded historical footprint approaching 2 million, the scale of Florida's prison complex is vast by any measure.
 

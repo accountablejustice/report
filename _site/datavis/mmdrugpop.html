@@ -129,7 +129,6 @@
     }
 
     .bar {
-        fill: #98abc5;
         fill-opacity: .7;
     }
 
@@ -154,7 +153,7 @@
     <label><input type="radio" name="dataset" id="dataset" value="Rate" checked> Rate per 100k Adults</label>
     <label><input type="radio" name="dataset" id="dataset" value="Prisoners"> Number of Prisoners</label>
 </form>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script>
     Rate = [
         {label:"15",value:15.2695600883366,number:175},
@@ -292,8 +291,17 @@
             .attr("class", "bar")
             .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
-            .attr("width", function(d) { return width-x(d.value); })
-            .attr("height", y.rangeBand(0));
+            .attr("width", function(d) { return x(d.value); })
+            .attr("height", y.rangeBand(0))
+            .attr("fill", "#98abc5")
+            .on("click", function(){
+                // Determine if current line is visible
+                var red = bar.red ? false : true,
+                    newColor = red ? "darkred": "#98abc5" ;
+                // Hide or show the elements
+                d3.select(this).attr("fill", newColor);
+                bar.red = red;
+            });
 
 
         bar
@@ -328,7 +336,7 @@
         text.enter()
             .append("text")
             .attr("x", function(d) {return x(d.value)+ 3;})
-            .attr("y", function (d) {return y(d.label)+28;})
+            .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatcomma(d.value)});
 
         text

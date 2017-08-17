@@ -9,7 +9,7 @@ description: |
 ---
 <iframe src="DataVisualizations/drugrate.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
 
-In almost every circuit in Florida , the incarceration rate of black adults solely for drugs
+In almost every circuit in Florida, the incarceration rate of black adults solely for drugs
 is higher than the total incarceration rate for similar countries. The 15th Circuit (Palm Beach) has a drug incarceration rate
 for black adults of 173 per 100,000. The United Kingdom's incarceration rate for _all offenses_ is 187 per 100,000.
 

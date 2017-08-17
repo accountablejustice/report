@@ -4,19 +4,19 @@ type: noheading
 ---
 ### Appendix B: Florida's Judicial Circuits
 
-First Circuit -- Escambia, Okaloosa, Santa Rosa and Walton
+First Circuit -- Escambia, Okaloosa, Santa Rosa, and Walton
 
 Second Circuit -- Franklin, Gadsden, Jefferson, Leon, Liberty, and Wakulla
 
-Third Circuit -- Columbia, Dixie, Hamilton, Lafayette, Madison, Suwannee and Taylor
+Third Circuit -- Columbia, Dixie, Hamilton, Lafayette, Madison, Suwannee, and Taylor
 
 Fourth Circuit -- Clay, Duval and Nassau
 
-Fifth Circuit -- Citrus, Hernando, Lake, Marion and Sumter
+Fifth Circuit -- Citrus, Hernando, Lake, Marion, and Sumter
 
 Sixth Circuit -- Pasco and Pinellas
 
-Seventh Circuit -- Flagler, Putnam, St. Johns and Volusia
+Seventh Circuit -- Flagler, Putnam, St. Johns, and Volusia
 
 Eighth Circuit -- Alachua, Baker, Bradford, Gilchrist, Levy, and Union
 
@@ -30,7 +30,7 @@ Twelfth Circuit –- DeSoto, Manatee, and Sarasota
 
 Thirteenth Circuit -- Hillsborough
 
-Fourteenth Circuit -- Bay, Calhoun, Gulf, Holmes, Jackson and Washington
+Fourteenth Circuit -- Bay, Calhoun, Gulf, Holmes, Jackson, and Washington
 
 Fifteenth Circuit -- Palm Beach
 
@@ -40,6 +40,6 @@ Seventeenth Circuit -- Broward
 
 Eighteenth Circuit -- Brevard and Seminole
 
-Nineteenth Circuit -- Indian River, Martin, Okeechobee and St. Lucie
+Nineteenth Circuit -- Indian River, Martin, Okeechobee, and St. Lucie
 
-Twentieth Circuit -- Charlotte, Collier, Glades, Hendry and Lee
+Twentieth Circuit -- Charlotte, Collier, Glades, Hendry, and Lee

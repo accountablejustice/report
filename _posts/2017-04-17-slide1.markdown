@@ -3,7 +3,7 @@ layout: default
 type: chartrighttall
 color: white
 category: Report
-title: Policy decisions drive prison admissions for violations of probation, which cost more than $100 million a year.
+title: Policy decisions drive prison admissions for violations of probation, which cost Florida taxpayers more than $100 million a year.
 link: DataVisualizations/vopbyyear.html
 ---
 Probation violations (VOPs) comprised 15% of prison admissions.
@@ -12,4 +12,4 @@ In FY2015, 5,712 people were in prison due to a VOP,
 
 Prison admissions for violations of probation are in large part driven by Department of Corrections policy. This is because most VOP admissions are precipitated by technical violations. Technical violations
 are behaviors that are against the rules of probation -- like missing a curfew deadline -- but are not by themselves against the law. It is important to note that
-although violations of probation sometimes consist of serious new law violations, previous studies have found that only 25% people admitted to prison for a violation of probation had been recently arrested for a felony; most had not been arrested for a new offense.<sup>11</sup>
+although violations of probation sometimes consist of serious new law violations, previous studies have found that only 25% of people admitted to prison for a violation of probation had been recently arrested for a felony; most had not been arrested for a new offense.<sup>11</sup>
