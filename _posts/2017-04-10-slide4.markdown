@@ -8,7 +8,7 @@ category: Report
 
 ## Table of Contents
 
-1. Editor's Note: The Need for Reform
+1. [Editor's Note: The Need for Reform](#note)
 2. [How to Read This Report](#HowTo)
 3. [Florida in Comparative Context](#context)
 4. [Florida's Path to 100,000 Prisoners](#path)
