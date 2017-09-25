@@ -43,7 +43,7 @@ Although policy differences resulted in vastly different prison populations
 and their associated costs, the two paths taken by Florida and New York
 did not result in different outcomes when it came to crimes committed.
 Both states saw crime rates decrease significantly since 2000. New York's
-crime rate is down 36%, and Florida's, though still higher than New York's, is down 42%.<sup>4</sup>
+crime rate is down 36%, and Florida's, though still higher than New York's, is down 42%.<sup>12</sup>
 
 ### Prison populations have increased far faster than the general population.
 The US prison population has septupled since 1970. In 1970, Florida
@@ -56,4 +56,4 @@ that Massachusetts' imprisonment rate is deflated because it
 sentences many people to incarceration in local jails instead of prison;
 its total incarceration rate is significantly higher.) If Florida had today the same imprisonment rate it had in 1970, it would confine 71,000 fewer
 people in its prisons. If the costs per prisoner remained the same, the state
-would avoid **$1.5 billion** in corrections expenses every year.<sup>3</sup>
+would avoid **$1.5 billion** in corrections expenses every year.<sup>13</sup>
