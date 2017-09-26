@@ -213,7 +213,7 @@
                     div	.html(d.state +
                         "<br/> Prison Population: " + formatcomma(d.population.find (function (e) {return e.year === year}).pop)
                         + " <br/>"
-                        + " <br/> Incarceration Rate:  <br/>"+ d.incrate.find( function (e) { return e.year === year}).rate
+                        + " <br/> Imprisonment Rate:  <br/>"+ d.incrate.find( function (e) { return e.year === year}).rate
                         + " per 100k")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px")

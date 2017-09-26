@@ -214,7 +214,7 @@
                         "<br/> Year: " + year
                         + "<br/> Prison Population: " + formatcomma(d.population.find (function (e) {return e.year === year}).pop)
                         + " <br/>"
-                        + " <br/> Incarceration Rate:  <br/>"+ formatcomma(d.incrate.find( function (e) { return e.year === year}).rate)
+                        + " <br/> Imprisonment Rate:  <br/>"+ formatcomma(d.incrate.find( function (e) { return e.year === year}).rate)
                         + " per 100k")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px")
@@ -463,7 +463,7 @@
 
   var clickicon =  d3.selectAll('svg')
         .append('image')
-        .attr('xlink:href','/spring2017report/img/slides/click.svg')
+        .attr('xlink:href','/report/img/slides/click.svg')
         .attr('height', '25')
         .attr('width', '25')
       .attr('opacity', 0)
