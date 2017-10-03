@@ -52,7 +52,7 @@ type: noheading
 
 15. E. Ann Carson, "[Prisoners in 2015](https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5869)," Bureau of Justice Statistics (2016).
 
-16. See footnote 5.
+16. See footnote 14.
 
 17. Since Florida effectively abolished parole in 1983, more than a dozen states followed. Most states, however, maintain mechanisms for discretionary release. For more details about the national context of parole and discretionary release, see Joan Petersilia, Edward Rhine, and Kevin Reitz, "The Future of Parole Release," in _Justice Futures: Reinventing American Criminal Justice, Vol. 42 of Crime and Justice: A Review of Research_, Michael Tonry, ed. (Chicago: University of Chicago Press), 2017. For statistics regarding elderly inmates, see Crime and Justice Institute, [_An Examination of Florida's Prison Population Trends_](http://www.oppaga.state.fl.us/summary.aspx?reportnum=17-CRJ) (May 2017).
 
@@ -60,9 +60,9 @@ type: noheading
 
 19. For the methodology notes of the Florida Department of Corrections recidivism analyses, see Florida Department of Corrections, "[Florida Department of Corrections Recidivism Report: Florida Prison Recidivism Study, Releases From 2008 to 2014](http://www.dc.state.fl.us/pub/recidivism/2015/index.html), December 2016.
 
-20. See footnote 5.
+20. See footnote 14.
 
-21. See footnote 5.
+21. See footnote 14.
 
 22. The Florida Department of Corrections adopted (relatively) full-scale digitization in 1998. Since then, more than 458,000 people have been prisoners in the state of Florida. Just over 99,000 of them are in prison today. 5,284 people have died in prison since 1998. The vast majority of the people who have been in prison -- more than 350,000 -- were released back into their communities. The Florida Department of Corrections digitized probation records in 1976. Since then, it has released almost 1.4 million people from supervision. Another 137,000 remain under the supervision of the Department of Corrections. Figures relating to prisoners, former prisoners, and current probationers are from the [April 2017 Public Records Requests for the OBIS Database](http://www.dc.state.fl.us/pub/obis_request.html), maintained by the Florida Department of Corrections. Figures regarding former probationers are from a datas et proved to the Project on Accountable Justice by the Florida Department of Corrections titled "Former Probationers."
 

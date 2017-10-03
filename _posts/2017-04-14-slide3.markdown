@@ -6,7 +6,8 @@ category: Report
  <hr class="section-heading-spacer">
    <div class="clearfix"></div>
 
-<h2 id="note" class="offset">Florida Criminal Justice Reform: Understanding the Challenges and Opportunities</h2>
+<h2 id="note" class="offset">Editor's Note: Florida Criminal Justice Reform</h2>
+<h3>Understanding the Challenges and Opportunities</h3>
 
 Another year has come and gone and the Florida Legislature failed to prioritize systemic criminal justice reform. Yet Florida's prison system remains in crisis, plagued by years of documented problems in staffing, safety, health care, transportation, and facilities. This inaction assures the system persists as dire and dangerous, with no prescription yet written for sustained and systemic improvement.<sup>1</sup> Floridians deserve a deliberate and accountable response.
 
@@ -22,7 +23,7 @@ While noting the many structural and operational deficiencies of the system, whi
 
 Although prison admissions over the past decade declined 28%, sentence lengths increased by 22%.<sup>6</sup> How much more safety do Floridians get with this increase? "There is considerable research validated by the FDC (and others) that the length of imprisonment has no impact on recidivism rates."<sup>7</sup>
 
-> "Among national criminal justice reform advocates, Florida is the great 'white whale.' It is the state that every reformer dreams about as fervently as Captain Ahab dreamed about Moby-Dick. Over the last 10 years, most of the states in the American South have passed major reform legislation to improve public safety, cut wasteful spending, and better restore victims--but Florida, one of the biggest and most influential states in the country, has remained a stubborn exception." Vikrant Reddy, Charles Koch Institute, [The Journal of The James Madison Institute](https://www.jamesmadison.org/publications/detail/criminal-justice-reform-in-florida-2016-and-beyond) (October 2016).
+> "Among national criminal justice reform advocates, Florida is the great 'white whale.' It is the state that every reformer dreams about as fervently as Captain Ahab dreamed about Moby-Dick. Over the last 10 years, most of the states in the American South have passed major reform legislation to improve public safety, cut wasteful spending, and better restore victims--but Florida, one of the biggest and most influential states in the country, has remained a stubborn exception." Vikrant Reddy, Charles Koch Institute, [The Journal of the James Madison Institute](https://www.jamesmadison.org/publications/detail/criminal-justice-reform-in-florida-2016-and-beyond) (October 2016).
 
 We spend $300 million a year to incarcerate people for drug offenses, but less than $1.50 a day to educate and rehabilitate a prisoner. We release more than 30,000 people per year, yet 69% will be re-arrested within three years.
 

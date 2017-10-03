@@ -11,3 +11,8 @@ description: |
 
 <h9 id="cgram"></h9>
 <iframe src="DataVisualizations/cgram2015.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
+
+<!-- Twitter -->
+<a href="http://twitter.com/home?status=This cartogram shows state prison populations since 1970 https://accountablejustice.github.io/report%23cgram @fsujustice" data-text="testing share text" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+ <!-- Facebook -->
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://accountablejustice.github.io/report%23cgram" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>

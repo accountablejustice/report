@@ -14,7 +14,7 @@ majority of prison admissions.
 ### Committing Offense
 The Committing Offense is the most serious charge for which an individual is sentenced to prison.
 It prioritizes violent offenses over property, drug, and other offenses. The Committing Offense
-variable captures violations of probation, parole, and conditional release.<sup>10</sup>
+variable captures violations of probation, parole, and conditional release.<sup>21</sup>
 
 ### Longest Sentenced Offense
 The Longest Sentenced Offense is the offense that carries the longest sentence, regardless of the

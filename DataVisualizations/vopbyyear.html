@@ -161,7 +161,7 @@
             .attr("y", function(d) { return y(d.number); })
             .attr("height", function(d) { return height - y(d.number); })
             .style("fill", function(d) {if (d.year <= 2002) {return "#98abc5"} else if (d.year >= 2009) {return "#8a89a6"} else {return "#7b6888"}})
-            .attr("opacity", .6)
+            .attr("opacity", .7)
             .on('mouseover', function(d) {
                 d3.select(this).attr("opacity", 1);
               tip.show(d) ;} )

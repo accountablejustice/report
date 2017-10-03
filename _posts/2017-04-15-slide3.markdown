@@ -7,7 +7,7 @@ category: Report
 title:
 description: |
 ---
-<small><small> Note: This Demmers Cartogram depicts only incarceration in state prisons. People incarcerated in federal prisons, local jails, immigration detention centers, or juvenile facilities are not represented in this cartogram. For notes on the data, see note 3.</small></small>
+<small><small> Note: This Demers Cartogram depicts only incarceration in state prisons. People incarcerated in federal prisons, local jails, immigration detention centers, or juvenile facilities are not represented in this cartogram. For notes on the data, see note 12.</small></small>
 
 ### In 2015, Florida had the third largest prison population in the country.
 Mass incarceration affects all of the United States, but only California
@@ -43,17 +43,17 @@ Although policy differences resulted in vastly different prison populations
 and their associated costs, the two paths taken by Florida and New York
 did not result in different outcomes when it came to crimes committed.
 Both states saw crime rates decrease significantly since 2000. New York's
-crime rate is down 36%, and Florida's, though still higher than New York's, is down 42%.<sup>12</sup>
+crime rate is down 36%, and Florida's, though still higher than New York's, is down 42%.<sup>13</sup>
 
 ### Prison populations have increased far faster than the general population.
 The US prison population has septupled since 1970. In 1970, Florida
 had the third highest imprisonment rate in the country -
 of each 100,000 residents, 135 were prisoners. Oklahoma (with an imprisonment rate of 142
 per 100,000 residents) led the nation in imprisonment. Today, Massachusetts, the state
- with the the country's _lowest_ imprisonment (146 per 100,000 residents) has
+ with the country's _lowest_ imprisonment (146 per 100,000 residents) has
 a higher state imprisonment rate than the highest (Oklahoma) in 1970. (It is worth noting
 that Massachusetts' imprisonment rate is deflated because it
 sentences many people to incarceration in local jails instead of prison;
 its total incarceration rate is significantly higher.) If Florida had today the same imprisonment rate it had in 1970, it would confine 71,000 fewer
 people in its prisons. If the costs per prisoner remained the same, the state
-would avoid **$1.5 billion** in corrections expenses every year.<sup>13</sup>
+would avoid **$1.5 billion** in corrections expenses every year.<sup>14</sup>

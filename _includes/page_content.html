@@ -1,22 +1,21 @@
 <section id="report">
-<!-- Page Content -->
-{% for post in site.posts reversed %}
-    {% if post.type == '' %}
-    <div class="content-section"
-       style = "background-color: {{ post.color}} ">
+    <!-- Page Content -->
+    {% for post in site.posts reversed %}
+    {% if post.type == 'left' %}
+    <div class="content-section">
 
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
+                <div class="col-lg-6 col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <h3 class="section-heading">{{ post.title }}</h3>
                     <div class="lead">{{ post.content }}</div>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                <div class="col-lg-6 col-lg-offset-2 col-sm-6">
+
+                    <img class="img-responsive" src="img/slides/{{ post.img }}" alt="">
                 </div>
             </div>
 
@@ -27,19 +26,19 @@
     <!-- /.content-section-a -->
     {% elsif post.type == 'right' %}
 
-    <div class="content-section"
-        style = "background-color: {{ post.color}} ">
+    <div class="content-section">
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
+                <div class="col-lg-6 col-sm-push-6  col-sm-6">
+
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <h3 class="section-heading">{{ post.title }}</h3>
                     <div class="lead">{{ post.content }}</div>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                <div class="col-lg-6 col-sm-pull-6  col-sm-6">
+
+                    <img class="img-responsive" src="img/slides/{{ post.img }}" alt="">
                 </div>
             </div>
 
@@ -51,22 +50,21 @@
 
     {% elsif post.type == 'chartleft' %}
 
-    <div class="content-section"
-         style = "background-color: {{ post.color }}">
+    <div class="content-section">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
+                <div class="col-lg-6 col-sm-push-6  col-sm-6">
+
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <h3 class="section-heading">{{ post.title }}</h3>
                     <div class="lead">{{ post.content }}</div>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <div class="col-lg-6 col-sm-pull-6  col-sm-6">
                     <div class ='container_chart_1'>
                         <div class="clearfix"></div>
-                        <iframe src= {{ post.link }} frameborder='0' scrolling = 'no' id = 'iframe_chart_1'>
+                        <iframe src= {{post.link}} frameborder='0' scrolling = 'no' >
                         </iframe>
                     </div>
                 </div>
@@ -76,25 +74,52 @@
         <!-- /.container -->
 
     </div>
+
+    {% elsif post.type == 'chartlefttall' %}
+
+    <div class="content-section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-push-6  col-sm-6">
+
+                    <div class="clearfix"></div>
+                    <h3 class="section-heading">{{ post.title }}</h3>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-6 col-sm-pull-6  col-sm-6">
+
+                    <div class ='container_chart_2'>
+                        <div class="clearfix"></div>
+                        <iframe src= {{post.link}} frameborder='0' scrolling = 'no' >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+
 
     {% elsif post.type == 'chartright' %}
 
-    <div class="content-section"
-         style = "background-color: {{ post.color }}">
+    <div class="content-section">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <div class="col-lg-6 col-sm-push-6  col-sm-6">
                     <div class ='container_chart_1'>
-                        <iframe src= {{ post.link }} frameborder='0' scrolling = 'no' id = 'iframe_chart_1'>
+                        <iframe src= {{ post.link }} frameborder='0' scrolling = 'no' >
                         </iframe>
                     </div>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
+                <div class="col-lg-6 col-sm-pull-6  col-sm-6">
+                    <h3 class="section-heading">{{ post.title }}</h3>
                     <div class="lead">{{ post.content }}</div>
                 </div>
             </div>
@@ -104,19 +129,58 @@
 
     </div>
 
-    {% else %}
+    {% elsif post.type == 'chartrighttall' %}
 
-    <div class="content-section"
-         style = "background-color: {{ post.color }}">
+    <div class="content-section">
+
 
         <div class="container">
 
             <div class="row">
+                <div class="col-lg-6 col-sm-push-6  col-sm-6">
+                    <div class ='container_chart_2'>
+                        <iframe src= {{ post.link }} frameborder='0' scrolling = 'no'>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-pull-6  col-sm-6">
 
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <h3 class="section-heading">{{ post.title }}</h3>
                     <div class="lead">{{ post.content }}</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    {% elsif post.type == 'noheading' %}
+
+    <div class="content-section">
+
+
+        <div class="container">
+            <div class="col-lg-12"></div>
+            <div class="row" style="padding-left:15px; padding-right:15px">
+                <div class="clearfix"></div>
+                <div class="lead">{{ post.content }}</div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    {% else %}
+
+    <div class="content-section">
+
+        <div class="container">
+            <div class="col-lg-12"></div>
+            <div class="row" style="padding-left:15px; padding-right:15px">
+                <div class="clearfix"></div>
+                <h3 class="section-heading">{{ post.title }}</h3>
+                <div class="lead">{{ post.content }}</div>
             </div>
 
         </div>
@@ -124,5 +188,5 @@
 
     </div>
     {% endif %}
-{% endfor %}
+    {% endfor %}
 </section>
