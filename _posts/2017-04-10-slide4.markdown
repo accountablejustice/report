@@ -17,5 +17,6 @@ category: Report
 7. [A Profile of Florida's Prison Population](#population)
 8. [The Role of Drug Offenses](#drugs)
 9. [The Scale of Florida's Prison Complex](#scale)
-10. [Appendices](#AppendixA)
-11. [Footnotes](#footnotes)
+10. [Conclusion and Recommendations](#conclusion)
+11. [Appendices](#AppendixA)
+12. [Footnotes](#footnotes)
