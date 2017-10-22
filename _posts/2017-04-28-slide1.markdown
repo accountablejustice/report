@@ -6,7 +6,7 @@ type: noheading
    <hr class="section-heading-spacer">
    <div class="clearfix"></div>
 
-<h2 id="scale" class="offset">Conclusion and Recommendations</h2>
+<h2 id="conclusion" class="offset">Conclusion and Recommendations</h2>
 
 Florida policy makers should be able to answer how well fundamental characteristics of Florida’s prison system--high incarceration rates, poor public safety returns, and enormous public expenditures--meet rigorous standards for both safety and cost-efficiency.   Do the current investments, practices and policy strategies employed by our state’s criminal justice and correctional systems result in the returns Floridians expect and deserve?
 
