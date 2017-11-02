@@ -5,8 +5,8 @@ category: Report
 link: DataVisualizations/vopunder.html
 title: Most probation violators were on probation for a non-violent offense.
 ---
-More than 70% of people sent to prison for VOPs in FY2015
-were on probation for a non-violent offense. The most common
+More than 70 percent of people sent to prison for VOPs in FY2015
+were on probation for a nonviolent offense. The most common
 underlying offenses (the offenses for which an individual was under
 probation supervision) involved drugs and property.
 
@@ -20,7 +20,7 @@ very serious offenses, such as murder and some sex offenses,
 provoking the question of why people with very serious offenses were
 placed on probation. These cases mostly involved the use of blended
 sentences: A court sentenced the initial offense to a term of imprisonment
-followed by a term of probation. This mean that, after serving the full term
+followed by a term of probation. This means that, after serving the full term
  of imprisonment, individuals with such sentences were placed on probation
  after their release. Like anyone on probation, these individuals
  could have their probation revoked for failing to fully comply with

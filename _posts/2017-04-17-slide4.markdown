@@ -12,3 +12,5 @@ discretion. In practice, this means that the same behavior
 will result in vastly different consequences depending on where you live,
 who your probation officer is, and who works in your local courthouse.<sup>23</sup>
 
+<small>Click on any Circuit to track its position as the chart transforms according to absolute numbers and rate.</small>
+

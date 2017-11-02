@@ -8,10 +8,10 @@ description: |
 ---
 ### Florida's criminal justice policies have often been at cross-purposes.
 For decades, Florida legislators have known that prisons are costly and inefficient,
-and they have occasionally taken steps to reduce the state's over-reliance on
+and they have occasionally taken steps to reduce the state's overreliance on
 incarceration. The Legislature established (and later repealed) a ceiling
 for the prison population. It instituted procedures to allow prison and parole
-administrators to release people before the end of their sentence—at times
+administrators to release people before the end of their sentence --- at times
 to address overcrowding and in response to litigation, but also as a way
 to incentivize good behavior and in recognition of prisoners’ ultimate
 return to Florida communities. On
@@ -37,7 +37,7 @@ new prisons and 34 new smaller facilities.<sup>15</sup>
 
 
 
-#### A ceiling on the prison population.
+#### The Legislature placed a ceiling on the prison population.
 In 1983, the Florida Legislature passed a law that it hoped would
 act as a "reasonable containment of criminal justice expenditures."
 It placed a ceiling on the number of prisoners the state could confine --
@@ -53,17 +53,16 @@ people confined in county jails, federal prisons, or juvenile lockup facilities.
  <div class="textbox">
     <h4><i>Costello v. Wainwright</i></h4>
      <small> In 1972, inmates in the Florida prison system filed a class
-     action suit (Costello v. Wainwright) against the State of Florida, c
-     Citing issues of prison overcrowding, sanitation and health care
+     action suit (Costello v. Wainwright) against the State of Florida, citing issues of prison overcrowding, sanitation and health care
      deficiencies. The State of Florida spent the next 21 years in
-     litigation and under the supervision of the Federal government. Over the period of a whole generation, Florida responded through a variety of strategies in order to satisfy the Court. In terms of addressing overcrowding, responses could be summed up in two categories: 1) attempts to control the growth of the prison population; and 2) prison construction to answer projections of growth driven by an increasingly more punitive sentencing structure. The second strategy prevailed, resulting in tens of thousands new beds.
+     litigation and under the supervision of the Federal government. Over the period of a whole generation, Florida responded through a variety of strategies in order to satisfy the Court. In terms of addressing overcrowding, responses could be summed up in two categories: 1) attempts to control the growth of the prison population; and 2) prison construction to answer projections of growth driven by an increasingly more punitive sentencing structure. The second strategy prevailed, resulting in tens of thousands of new beds.
      </small>
  </div>
  </div>
 
 The Legislature was motivated not only by the expenses of building and
 maintaining prisons, but also by recognition  that incarceration was
-not the only method nor, under certain circumstances, the most effective way of ensuring public safety and rehabilitating people in prison. The 1983 legislation provided increased funds for alternatives to incarceration, and was, in part, motivated by the Legislature’s observation that  "The effectiveness of incarceration ...
+not the only method nor, under certain circumstances, the most effective way of ensuring public safety and rehabilitating people. The 1983 legislation provided increased funds for alternatives to incarceration, and was, in part, motivated by the Legislature’s observation that "[t]he effectiveness of incarceration ...
  is not conclusively positive."<sup>16</sup>
 
 #### Small steps reduced confinement.
@@ -77,23 +76,9 @@ time off of their sentences.<sup>17</sup>
 #### Countervailing policies grew the system.
 Efforts to limit the number of people in Florida's prisons were quickly overwhelmed by the effects of policies and practices that drew more people into the criminal justice system. New laws increased penalties for drug offenses, lengthened sentences for  many types of offenses, and ensured that prisoners would spend more time in prison.<sup>18</sup>
 
-Instead of paying for
-prison construction with cash through payments
-known as "fixed capital appropriation" (a more rigorous and scrutinized process of state budgeting), a newly-empowered state agency
-named the Correctional Privatization Commission took out enormous loans
-to build new prison facilities. Even after the Correctional
-Privatization Commission was shut down (due to a flurry
-of corruption scandals), Florida continued to borrow money to build new
-prisons. Between FY2006 and FY2011, the state spent or borrowed almost
-$1.5 billion to pay for prison construction. This spending
-paid for prisons to be constructed in Lafayette, Gadsden, Marion,
-Washington, Wakulla, Jackson, Polk,
-Santa Rosa, and Suwanee Counties.<sup>19</sup>
+Instead of paying for prison construction with cash through payments known as "fixed capital appropriation" (a more rigorous and scrutinized process of state budgeting), a newly-empowered state agency named the Correctional Privatization Commission took out enormous loans to build new prison facilities. Even after the Correctional Privatization Commission was shut down (due to a flurry of corruption scandals), Florida continued to borrow money to build new prisons. Between FY2006 and FY2011, the state spent or borrowed almost $1.5 billion to pay for prison construction. This spending paid for prisons to be constructed in Lafayette, Gadsden, Marion, Washington, Wakulla, Jackson, Polk, Santa Rosa, and Suwanee Counties.<sup>19</sup>
 
-In 2015, Florida still owed more than $500
-million in principle of the debts it incurred for prison construction. By
-the time Florida pays off these debts in 2030, taxpayers will have paid
-an additional $690 million in debt service.<sup>20</sup>
+In 2015, Florida still owed more than $500 million in principle of the debts it incurred for prison construction. By the time Florida pays off these debts in 2030, taxpayers will have paid an additional $690 million in debt service.<sup>20</sup>
 
 
 

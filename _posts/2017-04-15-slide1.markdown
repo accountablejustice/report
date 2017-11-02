@@ -12,10 +12,13 @@ has a relatively high rate of incarceration compared to other economically devel
 Only Cuba and Russia, both with non-democratic governments, begin to approach
 the United States when it comes to incarceration.<sup>11</sup>
 
-<small><small>Note: North Korea does not provide reliable data, but the
+
+<small>Note: North Korea does not provide reliable data, but the
 [best estimates available](https://www.hrnk.org/uploads/pdfs/HRNK_HiddenGulag2_Web_5-18.pdf)
 conclude that North Korea confines between 150,000 and 200,000 people, resulting in
  an incarceration rate between 600 and 800 [per 100,000 residents](http://data.worldbank.org/indicator/SP.POP.TOTL).
 These data indicate that North Korea is the
 only sizable country whose incarceration rate may be higher than that of the
-United States.</small></small>
+United States.</small>
+
+<div class="clearfix"></div>

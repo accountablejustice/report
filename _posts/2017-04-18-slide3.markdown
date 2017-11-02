@@ -14,6 +14,8 @@ description: |
  <!-- Facebook -->
 <a href="https://www.facebook.com/sharer/sharer.php?u=https://accountablejustice.github.io/report%23drug" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
 
+Statewide, black adults are almost twice as likely to be in prison _for a drug offense_ than residents of the UK are to be in prison for any reason.
+
 In almost every circuit in Florida, the incarceration rate of black adults solely for drugs
 is higher than the total incarceration rate for similar countries. The 15th Circuit (Palm Beach) has a drug incarceration rate
 for black adults of 173 per 100,000. The United Kingdom's incarceration rate for _all offenses_ is 187 per 100,000.<sup>24</sup>
@@ -24,4 +26,3 @@ Though to a less extreme degree, white Floridians are also heavily impacted by t
 such as the 3rd (Lake City) and 14th (Panama City) Circuits, the white adult drug incarceration rates are 194 and 149,
 respectively.
 
-Statewide, black adults are almost twice as likely to be in prison _for a drug offense_ than residents of the UK are to be in prison for any reason.

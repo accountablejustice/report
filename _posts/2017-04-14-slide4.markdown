@@ -6,6 +6,6 @@ category: Report
  <hr class="section-heading-spacer">
    <div class="clearfix"></div>
 
-<h2 id="HowTo" class="offset"> How to read this report</h2>
+<h2 id="HowTo" class="offset"> How To Read This Report</h2>
 
 This report is a Data-Driven Document and contains many interactive data visualizations.<sup>10</sup> Hovering over most charts will reveal additional levels of detail, and many charts are clickable. Two charts (a cartogram of US prison populations and a timeline showing Florida's prison growth) require you to click on them in order to view the visualization. Where you are required to click, you will see this symbol <img src="img/slides/click.svg" width="30">.
