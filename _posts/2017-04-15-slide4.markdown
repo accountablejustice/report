@@ -4,7 +4,7 @@ type: center
 color: white
 img: blank.png
 category: Report
-title: Florida's prison population is the result of a generation of policy decisions - some with unintended consequences.
+title: Florida's prison population is the result of a generation of policy decisions --- some with unintended consequences.
 description: |
 ---
 
