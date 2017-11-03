@@ -134,7 +134,9 @@
         text-align: center;
     }
 
-
+    image{
+        fill: #fff;
+    }
 
 </style>
 
@@ -284,11 +286,11 @@
         function clicktrans() {
         var clickicon =  d3.selectAll('svg')
             .append('image')
+            .style('fill', "white")
             .attr('xlink:href','/report/img/slides/click.svg')
             .attr('height', '25')
             .attr('width', '25')
             .attr('opacity', 1)
-                .attr('fill',"white")
             .attr('x', width/2)
             .attr('y', height/2)
             ;
