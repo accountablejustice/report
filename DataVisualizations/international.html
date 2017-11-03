@@ -203,8 +203,6 @@
         width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
         height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
 
-    var div = d3.select("body").append("div").attr("class", "toolTip");
-
     var formatPercent = d3.format(",%");
 
     var y = d3.scale.ordinal()
@@ -288,20 +286,7 @@
             });
 
 
-        bar
-            .on("mousemove", function(d){
-                div.style("left", d3.event.pageX+10+"px");
-                div.style("top", d3.event.pageY-25+"px");
-                div.style("display", "inline-block");
-                div.html(d.label + "<br>" + formatcomma(d.value));
-            });
-        bar
-            .on("mouseout", function(d){
-                div.style("display", "none");
-            });
 
-
-        bar.exit().remove();
 
 
         // updated data:

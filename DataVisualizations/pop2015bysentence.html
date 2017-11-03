@@ -160,7 +160,6 @@
 <body>
 <script>
 
-//154pm
 
     Short = [
         {label:"Other",value :1872},
@@ -208,8 +207,6 @@ d3.selectAll("input").on("change", selectDataset);
     var margin = {top: (parseInt(d3.select('body').style('height'), 10)/20), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/20), left: (parseInt(d3.select('body').style('width'), 10)/4.8)},
         width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
         height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
-
-    var div = d3.select("body").append("div").attr("class", "toolTip");
 
     var formatPercent = d3.format(",%");
 
@@ -281,21 +278,10 @@ d3.selectAll("input").on("change", selectDataset);
             .attr("class", "bar")
             .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
-            .attr("width", function(d) { return width-x(d.value); })
+            .attr("width", function(d) { return 0 })
             .attr("height", y.rangeBand(0));
 
 
-
-        bar
-            .on("mousemove", function(d){
-                div.style("left", d3.event.pageX+10+"px");
-                div.style("top", d3.event.pageY-25+"px");
-                div.style("display", "inline-block");
-                div.html((d.label)+"<br>"+formatcomma(d.value));
-            });
-        bar
-            .on("mouseout",
-                div.style("display", "none"));
 
 
 

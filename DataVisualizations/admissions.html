@@ -270,7 +270,7 @@
             .attr("class", "bar")
             .attr("x", 0)
             .attr("y", function(d) { return y(d.label); })
-            .attr("width", function(d) { return width-x(d.value); })
+            .attr("width", function(d) { return x(d.value)})
             .attr("height", y.rangeBand(0));
 
 
@@ -309,7 +309,7 @@
             .append("text")
             .attr("x", function(d) {return x(d.value)+ 3;})
             .attr("y", function (d) {return y(d.label)+28;})
-            .text(function(d) {return formatPercent(d.value/100)})
+            .text(function(d) {return formatPercent(d.value/100)});
 
         text
             .transition().duration(750)
@@ -318,7 +318,7 @@
             .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
             .text(function(d) {return formatPercent(d.value/100)});
 
-    };
+    }
 </script>
 </body>
 
