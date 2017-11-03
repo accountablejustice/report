@@ -134,7 +134,12 @@
         text-align: center;
     }
 
-    element{
+    .image{
+        fill: #fff;
+        fill-opacity: 1;
+    }
+
+    image{
         fill: #fff;
         fill-opacity: 1;
     }
@@ -287,12 +292,10 @@
         function clicktrans() {
         var clickicon =  d3.selectAll('svg')
             .append('image')
-            .attr('class', 'element')
+            .attr('class', 'image')
             .attr('xlink:href','/report/img/slides/click.svg')
             .attr('height', '25')
             .attr('width', '25')
-            .style('fill', 'white')
-            .attr('opacity', 1)
             .attr('x', width/2)
             .attr('y', height/2)
             ;
