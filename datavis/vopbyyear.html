@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<style>
+
+    body {
+        height: 440px;
+        width: 440px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+
+
+    #chart-header {
+        position: relative;
+        left: 150px;
+        top: 55px;
+        width: 800px;
+    }
+
+    #chart-header h3 {
+        font-size: 16px;
+        margin: 3px;
+    }
+
+    .chart-text {
+        font-size: 14px;
+    }
+    .chart-text div {
+        border-top: 1px dotted #cccccc;
+        border-right: 1px dotted #cccccc;
+    }
+
+
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .bar-hover {
+        opacity: 1
+    }
+
+    .x.axis path {
+        stroke: #000;
+    }
+
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+        color: #555;
+    }
+
+    text{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 10px;
+    }
+</style>
+
+<h3><br><br>VOP Admissions by Year </h3>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="https://d3js.org/d3-axis.v1.min.js"></script>
+<script>
+
+
+    var margin = {top: 0, right: 40, bottom: 30, left:50},
+        width = 440 - margin.left - margin.right,
+        height = 440 - margin.top - margin.bottom;
+
+    var formatcomma = d3.format(",.0f")	;
+
+    var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom")
+        .tickValues([1998, 2000, 2005, 2010, 2015]);
+
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .tickFormat(formatcomma);
+
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d) {if (d.year <= 2002) {return "Before Zero<br>Tolerance, in<br>" + d.year + ", there were<br>" + formatcomma(d.number)+ "<br>VOP Admissions"}
+        else if (d.year >= 2009) {return "After  Zero Tolerance, in<br>" + d.year + ", there were<br>" + formatcomma(d.number)+ "<br>VOP Admissions"}
+        else {return "During Zero Tolerance, in<br>" + d.year + ", there were<br>" + formatcomma(d.number)+ "<br>VOP Admissions"}});
+
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.call(tip);
+
+    d3.tsv("historicalvopdata.tsv", type, function(error, data) {
+        x.domain(data.map(function(d) { return d.year; }));
+        y.domain([0, d3.max(data, function(d) { return d.number; })]);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Admissions for VOPs");
+
+        svg.selectAll(".bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) { return x(d.year); })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) { return y(d.number); })
+            .attr("height", function(d) { return height - y(d.number); })
+            .style("fill", function(d) {if (d.year <= 2002) {return "#98abc5"} else if (d.year >= 2009) {return "#8a89a6"} else {return "#7b6888"}})
+            .attr("opacity", .6)
+            .on('mouseover', function(d) {
+                d3.select(this).attr("opacity", 1);
+                tip.show(d) ;} )
+            .on('mouseout', function(d) {
+                d3.select(this).attr("opacity", .6); tip.hide(d);})
+
+    });
+
+    function type(d) {
+        d.number = +d.number;
+        return d;
+    }
+
+
+</script>

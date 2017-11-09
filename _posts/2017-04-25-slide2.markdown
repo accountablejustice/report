@@ -1,0 +1,10 @@
+---
+layout: default
+type: right
+color: white
+img: flow3.jpg
+category: Report
+title: One-third of Florida's prison population turns over every year.
+---
+Each and every year, approximately 32,000 people are released from Florida prisons --- one third of the prison population. And every year, they are replaced by another 32,000 people who are admitted to prison. Florida's prisons system is typical in this regard: Nationally, one-third of the prison population --- more than 600,000 people --- are released each year.<sup>25</sup>
+

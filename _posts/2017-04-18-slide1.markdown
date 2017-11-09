@@ -1,0 +1,20 @@
+---
+layout: default
+type: right
+img: circuit-map.png
+category: Report
+title: Racial and jurisdictional disparities are defining features of Florida's criminal justice system.
+description: |
+---
+In Florida's criminal justice system, your ZIP code and
+the color of your skin can sometimes matter more than your behavior.
+Disparities between circuits are a product of the criminal justice
+system's relative decentralization. Each circuit has its own
+judges, prosecutors, defense attorneys, probation officers,
+and police forces. The decisions these people make --- individually
+and collectively --- determine who is punished and how.
+
+Racial and jurisdictional disparities are most apparent in analyses of less serious cases (like drug offense and probation violations) where decision-makers
+exercise more discretion. Florida's criminal justice system
+produces significant racial and jurisdictional disparities, especially
+in the enforcement of the terms of probation and of drug offenses.

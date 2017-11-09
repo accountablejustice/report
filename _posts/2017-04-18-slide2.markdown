@@ -1,0 +1,20 @@
+---
+layout: default
+type: noheading
+color:
+category: Report
+title: In every judicial circuit, black adults are more likely to be incarcerated than white adults.
+---
+<iframe id="disparate" src="DataVisualizations/prisonrate2.html" height='500' width='960' frameborder='0' scrolling='no'></iframe>
+
+<!-- Twitter -->
+<a href="http://twitter.com/home?status=How do ZIP code and skin color affect imprisonment? https://accountablejustice.github.io/report%23disparate @fsujustice" data-text="testing share text" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+ <!-- Facebook -->
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://accountablejustice.github.io/report%23disparate" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+
+
+Statewide, one in 42 black adults was incarcerated by the Florida Department of Corrections in a FY2015 snapshot. For white adults, the figure was one in 229. Florida's 19th Circuit (Okeechobee) had the most severe racial disparities. One in 24 black adults in the 19th Circuit was imprisoned in FY2015 --- more than eleven times the rate of their white neighbors.
+
+Florida's different jurisdictions produce disparate results. White adults in the 3rd Circuit (Lake City and its environs) were twice as likely as whites in the 19th Circuit (Okeechobee), three times more likely than whites in the 17th Circuit (Fort Lauderdale) and almost five times more likely than whites in the 11th (Miami) and 15th (Palm Beach) Circuits to be imprisoned.
+
+
