@@ -1,6 +1,6 @@
 # Florida Criminal Justice Reform: Understanding the Challenges and Opportunities
 
-This is a Report by the [Project on Accountable Justice](www.iog.fsu.edu/paj/).
+This is a report by the [Project on Accountable Justice](www.iog.fsu.edu/paj/).
 
  The website is based on the [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page/)
 
