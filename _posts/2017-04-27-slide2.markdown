@@ -8,6 +8,8 @@ link: DataVisualizations/mmdrugpop.html
 title: More than one-third of drug inmates were serving a Mandatory Minimum offense.
 description: |
 ---
+Mandatory Minimum sentences strip judges of their discretion in handing down a sentence. Their original intention was to increase the fairness and predictability of the system, but their primary effect has been to shift power from judges to prosecutors, who still have discretion about who to charge and what charges to bring. When someone is convicted of or pleads guilty to an offense with a mandatory minimum sentence, the judge is required under law to sentence them to a minimum term of imprisonment --- irrespective of any individual circumstances or mitigating factors. Though mandatory minimum sentences apply to many types of offenses (Florida's 10-20-Life statute is one example), they most often apply to crimes involving drugs. Under current law, a judge must sentence a first-time offender convicted of possessing 50 Oxycodone pills to a 15-year term in prison --- even if she believes another sentence would be more appropriate or effective.
+
 The costs of Florida's mandatory minimum drug offenses exceeded $106
 million in FY2015.<sup>31</sup>
 
