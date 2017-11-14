@@ -6,9 +6,9 @@ category: Report
 title: The United States incarcerates more of its citizens than any other country.
 link:  DataVisualizations/international.html
 ---
-There are currently more than 1.5 million people in American prisons, and another 700,000 in local jails.
-No other country incarcerates this many people. The US incarceration rate, of 666 people per 100,000 residents, is nearly five times higher than that of the United Kingdom, which itself
-has a relatively high rate of incarceration compared to other economically developed democracies.
+There are currently more than 1.5 million people in American prisons, and another 700,000 in local jails. At the end of 2015, 153,000 Floridians were in prison or jail. Florida's incarceration rate is 20 percent higher than the national average.
+
+No other country incarcerates as many people as the United States. The US incarceration rate, of 666 people per 100,000 residents, is nearly five times higher than that of the United Kingdom, which itself has a relatively high rate of incarceration compared to other economically developed democracies.
 Only Cuba and Russia, both with non-democratic governments, begin to approach
 the United States when it comes to incarceration.<sup>11</sup>
 
