@@ -33,6 +33,15 @@
     <![endif]-->
 
 </head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109515405-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109515405-1');
+</script>
 
 <body>
 <!-- Navigation -->
@@ -233,7 +242,7 @@
 
 <h2 id="HowTo" class="offset"> How To Read This Report</h2>
 
-<p>This report is a Data-Driven Document and contains many interactive data visualizations.<sup>10</sup> Hovering over most charts will reveal additional levels of detail, and many charts are clickable. Two charts (a cartogram of US prison populations and a timeline showing Florida’s prison growth) require you to click on them in order to view the visualization. Where you are required to click, you will see this symbol <img src="img/slides/click.svg" width="30" />.</p>
+<p>This report is a Data-Driven Document and contains many interactive data visualizations.<sup>10</sup> Hovering over most charts will reveal additional levels of detail, and many charts are clickable. Two charts (a cartogram of US prison populations and a timeline showing Florida’s prison growth) require you to click on them in order to view the visualization. Where clicking reveals additional data or functionality, you will see this symbol <img src="img/slides/click.svg" width="30" />.</p>
 </div>
             </div>
 
@@ -283,9 +292,8 @@
                 <div class="col-lg-6 col-sm-pull-6  col-sm-6">
 
                     <h3 class="section-heading">The United States incarcerates more of its citizens than any other country.</h3>
-                    <div class="lead"><p>There are currently more than 1.5 million people in American prisons, and another 700,000 in local jails.
-No other country incarcerates this many people. The US incarceration rate, of 666 people per 100,000 residents, is nearly five times higher than that of the United Kingdom, which itself
-has a relatively high rate of incarceration compared to other economically developed democracies.
+                    <div class="lead"><p>There are currently more than 1.5 million people in American prisons, and another 700,000 in local jails. At the end of 2015, 153,000 Floridians were in prison or jail. Florida’s incarceration rate is 20% higher than the national average.
+No other country incarcerates as many people as the United States. The US incarceration rate, of 666 people per 100,000 residents, is nearly five times higher than that of the United Kingdom, which itself has a relatively high rate of incarceration compared to other economically developed democracies.
 Only Cuba and Russia, both with non-democratic governments, begin to approach
 the United States when it comes to incarceration.<sup>11</sup></p>
 
@@ -1086,7 +1094,7 @@ Criminological studies have shown that most people age out of criminal behavior 
 
 Data tracking the re-imprisonment of people released from Florida prisons reflects these broader trends. Only 2 percent of people age 60 or older released from Florida prisons between FY2005 and FY2010 were re-imprisoned for a violent felony within five years of their release. Overall, 19 percent of people 60 and older returned to prison, but 32 percent of these recidivists were re-incarcerated for a violation --- not a new offense.
 
-<small><small>Note: The methodology of this recidivism analysis differs from that of the Florida Department of Corrections in several ways. This analysis identified all people released from Florida prisons between July 1, 2005 and June 30, 2010, and followed each of them for five years. An individual was considered a recidivist if he or she returned to prison within the five-year time frame, in which case the reason for his or her return was recorded. If an individual appeared multiple times in the sample (i.e., he or she was released from Florida prisons twice during the study period) both releases were included in the sample. (The Florida Department of Corrections considers only "first releases," or the very first time an individual was released from their facilities. All subsequent entries and releases are excluded from FDC's analyses.)<sup>29</sup></small></small>
+<small>Note: The methodology of this recidivism analysis differs from that of the Florida Department of Corrections in several ways. This analysis identified all people released from Florida prisons between July 1, 2005 and June 30, 2010, and followed each of them for five years. An individual was considered a recidivist if he or she returned to prison within the five-year time frame, in which case the reason for his or her return was recorded. If an individual appeared multiple times in the sample (i.e., he or she was released from Florida prisons twice during the study period) both releases were included in the sample, which consisted of 177,317 observations. Overall, thirty-eight percent of releases returned to prison within five years. (The Florida Department of Corrections considers only "first releases," or the very first time an individual was released from their facilities. All subsequent entries and releases are excluded from FDC's analyses.)<sup>29</sup></small>
 
 </div>
             </div>
@@ -1165,7 +1173,9 @@ There are vast differences in how Florida's circuits use incarceration
 
                     <div class="clearfix"></div>
                     <h3 class="section-heading">More than one-third of drug inmates were serving a Mandatory Minimum offense.</h3>
-                    <div class="lead">The costs of Florida's mandatory minimum drug offenses exceeded $106
+                    <div class="lead">Mandatory Minimum sentences strip judges of their discretion in handing down a sentence. Their original intention was to increase the fairness and predictability of the system, but their primary effect has been to shift power from judges to prosecutors, who still have discretion about who to charge and what charges to bring. When someone is convicted of or pleads guilty to an offense with a mandatory minimum sentence, the judge is required under law to sentence them to a minimum term of imprisonment --- irrespective of any individual circumstances or mitigating factors. Though mandatory minimum sentences apply to many types of offenses (Florida's 10-20-Life statute is one example), they most often apply to crimes involving drugs. Under current law, a judge must sentence a first-time offender convicted of possessing 50 Oxycodone pills to a 15-year term in prison --- even if she believes another sentence would be more appropriate or effective.
+
+The costs of Florida's mandatory minimum drug offenses exceeded $106
 million in FY2015.<sup>31</sup>
 
 <small><small>Note: This report defines "mandatory minimum drug inmate"
@@ -1365,7 +1375,7 @@ Any findings, opinions, or recommendations expressed herein are those of the Pro
 
 10. [Data-Driven Documents (or D3)](https://d3js.org/) use a javascript library developed by Mike Bostock, formerly of the _New York Times._ The Project on Accountable Justice is indebted to him as well as others who shared their open-source code for visualizations, especially Chris Givens, Juan Cruz-Benito, and Justin Palmer. This website is built in Jekyll using Markdown and hosted on Github pages, and owes thanks to Amanda Visconti at The Programming Historian. The background image at the top of this page is a satellite photo of the area near Union Correctional Institution and Florida State Prison in Union and Bradford Counties. See Amanda Visconti, "Building a static website with Jekyll and GitHub Pages," [Programming Historian](http://programminghistorian.org/lessons/building-static-sites-with-jekyll-github-pages), (2016-04-18) and  *Google Maps*, [[Union Correctional Institution and Florida State Prison, Bradford and Union Counties, Florida](https://www.google.com/maps/place/Union+Correctional+Institution/@30.0645298,-82.1883068,2999m/data=!3m1!1e3!4m5!3m4!1s0x0:0x75f1bae1e5fa5c5a!8m2!3d30.0672044!4d-82.191526)]., (n.d.), retrieved April 15, 2017.
 
-11. A small island nation in the Indian Ocean, Seychelles, has the highest incarceration rate in the world, according to the World Prison Brief. The Seychelles incarcerates fewer than 800 people. Data for OECD countries comes from the Organisation for Economic Co-operation and Development (OECD), [_Society at a Glance 2016_](http://www.keepeek.com/Digital-Asset-Management/oecd/social-issues-migration-health/society-at-a-glance-2016_9789264261488-en#page135) (Paris: OECD Publishing, 2016), p. 133. Cuba data are from Peter Wagner and Allison Walsh, [_States of Incarceration: The Global Context_](https://www.prisonpolicy.org/global/2016.html) (Prison Policy Initiative, 2016). Estimates of North Korea's prison population are from David Hawk, [*The Hidden Gulag: The Lives and Voices of "Those who are Sent to the Mountains" (Second Edition)*](https://www.hrnk.org/uploads/pdfs/HRNK_HiddenGulag2_Web_5-18.pdf) (Washington, DC: Committee for Human Rights in North Korea), 2012 and were combined with population from The World Bank, [Population Totals](http://data.worldbank.org/indicator/SP.POP.TOTL), 2017. See also Roy Walmsley, [*World Prison Population List, 11th Edition*](http://www.prisonstudies.org/sites/default/files/resources/downloads/world_prison_population_list_11th_edition_0.pdf), World Prison Brief and Institute for Criminal Policy Research, 2016.
+11. A small island nation in the Indian Ocean, Seychelles, has the highest incarceration rate in the world, according to the World Prison Brief. The Seychelles incarcerates fewer than 800 people. Data for OECD countries comes from the Organisation for Economic Co-operation and Development (OECD), [_Society at a Glance 2016_](http://www.keepeek.com/Digital-Asset-Management/oecd/social-issues-migration-health/society-at-a-glance-2016_9789264261488-en#page135) (Paris: OECD Publishing, 2016), p. 133. Data concerning Florida date from 2015. Danielle Kaeble and Lauren Glaze, [_Correctional Populations in the United States, 2016_](https://www.bjs.gov/content/pub/pdf/cpus15.pdf) (Bureau of Justice Statistics, December 2016)Cuba data are from Peter Wagner and Allison Walsh, [_States of Incarceration: The Global Context_](https://www.prisonpolicy.org/global/2016.html) (Prison Policy Initiative, 2016). Estimates of North Korea's prison population are from David Hawk, [*The Hidden Gulag: The Lives and Voices of "Those who are Sent to the Mountains" (Second Edition)*](https://www.hrnk.org/uploads/pdfs/HRNK_HiddenGulag2_Web_5-18.pdf) (Washington, DC: Committee for Human Rights in North Korea), 2012 and were combined with population from The World Bank, [Population Totals](http://data.worldbank.org/indicator/SP.POP.TOTL), 2017. See also Roy Walmsley, [*World Prison Population List, 11th Edition*](http://www.prisonstudies.org/sites/default/files/resources/downloads/world_prison_population_list_11th_edition_0.pdf), World Prison Brief and Institute for Criminal Policy Research, 2016.
 
 
 12. The data underlying this visualization show only state imprisonment, not other types of incarceration (which could include detention in local jails, federal imprisonment, immigration detention, and juvenile incarceration). Data from 1978 to 2015 are drawn from the Bureau of Justice Statistics, [National Prisoner Statistics: Corrections Statistical Analayis Tool --- Prisoners](http://www.bjs.gov/nps)	. Data from 1970 to 1977 are calculated from Bureau of Justice Statistics, [_Historical Statistics on Prisoners in State and Federal Institutions, Yearend 1925-86_](https://www.ncjrs.gov/pdffiles1/digitization/111098ncjrs.pdf), (1982) and US Census Bureau, Population in the United States, 1900-2014 ([accessed via API through Google's Public Data reference center](https://www.google.com/publicdata/explore?ds=kf7tgg1uo9ude_&hl=en&dl=en)). These data come with many caveats, and different states, at different times, counted their prison populations slightly differently. For a full explanation of the data, see [notes on the raw data](docs/ImprisonmentRatesofTotalJurisdictionalPopulation_BJS_NPS.xls) (clicking here will download an excel file). To read how 10-20-Life has impacted people for firing warning shots, see Steve Bousquet, "[The Warning Shot that Condemned Orville Lee Wollard to Prison and Changed Florida](http://www.tampabay.com/news/politics/stateroundup/a-warning-shot-sent-a-man-to-prison-for-20-years-and-shockwaves-to-the/2264128)," _Tampa Bay Times_ (February 4, 2016).
@@ -1432,7 +1442,8 @@ Any findings, opinions, or recommendations expressed herein are those of the Pro
 			<div class="row">
 				<div class="col-lg-6">
 					<h2>Project on Accountable Justice</h2>
-					<p>The Project on Accountable Justice is a think tank based at the Florida State University College of Social Sciences and Public Policy in partnership with the Institute for the Study of Prosocial Behavior at Baylor University, the Institute for Strategic Policy Solutions at St. Petersburg College and the Florida Public Safety Institute at Tallahassee Community College. PAJ is dedicated to advancing public safety through research and evidence.</p>
+					<p>TThe Project on Accountable Justice (PAJ) is a think tank dedicated to advancing public safety through research and evidence.</p>
+					<p>PAJ is a collaboration of the Florida State University College of Social Sciences and Public Policy, the Institute for the Study of Prosocial Behavior at Baylor University, the Institute for Strategic Policy Solutions at St. Petersburg College and the Florida Public Safety Institute at Tallahassee Community College.</p>
 				</div>
 				<div class="col-lg-6">
 					<ul class="list-inline banner-social-buttons">
