@@ -54,7 +54,7 @@ subTitle: Understanding the Challenges and Opportunities
 
 <div class="rowp">
 <div class="col-sm-6">
-<iframe id="disparate" src="DataVisualizations/vopadmissions.html" height='500' width='960' frameborder='0' scrolling='no'></iframe>
+<iframe id="disparate" src="DataVisualizations/vopadmissions.html" height='600' width='960' frameborder='0' scrolling='no'></iframe>
 </div>
 <div class="col-sm-6">
 <br>
@@ -67,14 +67,6 @@ subTitle: Understanding the Challenges and Opportunities
 <iframe id="disparate" src="DataVisualizations/prisonrate2.html" height='500' width='960' frameborder='0' scrolling='no'></iframe>
 </div>
 
-<div class="rowp">
-<h2>Criminal Justice Reform Is a Winning Issue</h2>
-<div class="row" style="max-height:550px">
-<div class="mdd" style="text-align: center">
- <img style="max-width: 600px; margin:auto" src="img/slides/FL-Infographic-2-1.png" max-height="500px" alt="The public supports reform">
-</div>
-</div>
-</div>
 
 # Recommendations
 ### 1. Enhance External Oversight.
