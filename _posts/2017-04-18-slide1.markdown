@@ -18,3 +18,5 @@ Racial and jurisdictional disparities are most apparent in analyses of less seri
 exercise more discretion. Florida's criminal justice system
 produces significant racial and jurisdictional disparities, especially
 in the enforcement of the terms of probation and of drug offenses.
+
+<small>Note (December 2018): An earlier version of this report underreported incarceration rates for white Floridians. These revised figures are based on FDC reporting of prisoners' race and ethnicity and census estimates of populations. Figures for white adults refer only to white non-Hispanic adults.</small>
