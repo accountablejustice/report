@@ -195,7 +195,7 @@ Cyrus O'Brien and Deborrah Brodsky researched and wrote this report.
 
  6. See [Office of Program Policy Analysis and Government Accountability, Diverting Low-Risk Offenders from Florida Prisons, Report No. 19-01 (January 2019)](http://www.oppaga.state.fl.us/MonitorDocs/Reports/pdf/1901rpt.pdf), p. 20.
 
- 7. For an overview of effective policies to reduce drug abuse and its social and economic harms, see [Washington State Institute for Public Policy, Inventory of Evidence-Based, Research-Based, and Promising Programs for Adult Corrections (February 2018)](http://www.wsipp.wa.gov/ReportFile/1681/Wsipp_Inventory-of-Evidence-Based-Research-Based-and-Promising-Programs-for-Adult-Corrections_Report.pdf),
+ 7. For an overview of effective policies to reduce drug abuse and its social and economic harms, see [Washington State Institute for Public Policy, Inventory of Evidence-Based, Research-Based, and Promising Programs for Adult Corrections (February 2018)](http://www.wsipp.wa.gov/ReportFile/1681/Wsipp_Inventory-of-Evidence-Based-Research-Based-and-Promising-Programs-for-Adult-Corrections_Report.pdf).
 
  8. The offense codes used were TRAFF ILL DRUGS  4-U/14 GRAMS, CONSPIR.TO TRAFF.DRUGS, TRAFF HER.ETC 28G-U/30 KG, TRAFF HER.,ETC.14-U/28 GR, and TRAFF HER.,ETC.14-U/28 GR. Conspiracy to traffic drugs was included because it also results in a mandatory minimum sentence.
 
