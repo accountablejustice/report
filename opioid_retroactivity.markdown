@@ -191,7 +191,7 @@ Cyrus O'Brien and Deborrah Brodsky researched and wrote this report.
 
  4. This estimate is based on the FY2017-2018 per diem rate of $59.57. [Florida Department of Corrections, 2017-2018 Annual Report](http://www.dc.state.fl.us/pub/annual/1718/FDC_AR2017-18.pdf).
 
- 5. Women account for 6.9 percent of the total prison population but are 14.3 percent of the population affected by the shortocmings in opioid reforms.
+ 5. Women account for 6.9 percent of the total prison population but are 14.3 percent of the population affected by the shortcomings in opioid reforms.
 
  6. See [Office of Program Policy Analysis and Government Accountability, Diverting Low-Risk Offenders from Florida Prisons, Report No. 19-01 (January 2019)](http://www.oppaga.state.fl.us/MonitorDocs/Reports/pdf/1901rpt.pdf), p. 20.
 
