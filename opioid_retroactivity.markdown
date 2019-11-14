@@ -14,7 +14,7 @@ The Florida Legislature adopted its expansive definition of trafficking at the h
 
 The problems arise in cases where the trafficking threshold is set so low that it confuses drug users with drug kingpins. Until 2014, Florida law set a trafficking threshold so low that possessing as few as seven hydrocodone pills resulted in a mandatory minimum trafficking sentence of three years. Possession of forty-four pills—equivalent to a twenty-two-day supply for patients prescribed two hydrocodone pills per day for chronic pain—resulted in a mandatory sentence of twenty-five years in prison. Incarcerating a single individual for the twenty-five-year mandatory minimum sentence associated with possessing as few as forty-four hydrocodone pills would cost the state more than $450,000.<sup>2</sup>
 
-Judges who thought that these punishments were extreme or disproportionate could do little to prevent them. Because the trafficking statute imposed mandatory minimum sentences, the law tied the hands of judges and forced them to condemn thousands of Floridians to very long terms of imprisonment. "I take no pleasure in imposing this sentence," a [judge in Osceola County told a defendant as he sentenced her to twenty-five years in prison](https://www.tampabay.com/special-reports/2019/11/13/hundreds-of-florida-inmates-are-serving-drug-sentences-no-longer-in-state-law/). "But I don't have any discretion in the matter."
+Judges who thought that these punishments were extreme or disproportionate could do little to prevent them. Because the trafficking statute imposed mandatory minimum sentences, the law tied the hands of judges. As a result, thousands of Floridians were sentenced to very long terms of imprisonment. "I take no pleasure in imposing this sentence," a [judge in Osceola County told a defendant as he sentenced her to twenty-five years in prison](https://www.tampabay.com/special-reports/2019/11/13/hundreds-of-florida-inmates-are-serving-drug-sentences-no-longer-in-state-law/). "But I don't have any discretion in the matter."
 
 ### The Florida Legislature Partially Addressed the Problem
 In 2014, the Florida Legislature acknowledged that the trafficking threshold for prescription drugs were too low. Legislators passed laws that raised the thresholds significantly. The twenty-five year mandatory minimum threshold for hydrocodone increased from 44 pills to 462. The Legislature also added a new, seven-year mandatory minimum sentence for people possessing intermediate quantities of oxycodone or hydrocodone.
@@ -187,7 +187,7 @@ Cyrus O'Brien, consultant to the Project on Accountable Justice and Postdoctoral
 
  4. This estimate is based on the FY2017-2018 per diem rate of $59.57. [Florida Department of Corrections, 2017-2018 Annual Report](http://www.dc.state.fl.us/pub/annual/1718/FDC_AR2017-18.pdf).
 
- 5. Women account for 6.9 percent of the total prison population but are 14.3 percent of the population affected by the shortcomings in opioid reforms.
+ 5. Women account for 6.9 percent of the total prison population but are 14.3 percent of the population affected by the shortcomings in opioid reforms. Additional research is necessary to understand the impact of specific laws and policies on women.
 
  6. See [Office of Program Policy Analysis and Government Accountability, Diverting Low-Risk Offenders from Florida Prisons, Report No. 19-01 (January 2019)](http://www.oppaga.state.fl.us/MonitorDocs/Reports/pdf/1901rpt.pdf), p. 20.
 
