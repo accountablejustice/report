@@ -104,8 +104,6 @@ Though the revised thresholds [continue to ineffectively address drug addiction 
 
 Despite the change in law, hundreds of Floridians whose offenses occurred before the 2014 reforms remain incarcerated under the old thresholds. PAJ estimates that between 680 and 935 people could become eligible for early release if the 2014 legislation that reformed hydrocodone and oxycodone mandatory minimum sentences was made retroactive. The cost of incarcerating 680 people is $14,785,000 a year; incarcerating 935 people costs $20,330,000 a year.<sup>4</sup> Further, as is consistent with [previous research](https://www.sentencingproject.org/wp-content/uploads/2016/01/Gender-and-Justice-Women-Drugs-and-Sentencing-Policy.pdf) and [reporting on the topic by the _Tampa Bay Times_](https://www.tampabay.com/special-reports/2019/11/13/hundreds-of-florida-inmates-are-serving-drug-sentences-no-longer-in-state-law/), women are disproportionately affected by the Legislature's failure to make the reforms retroactive. A person incarcerated under the obsolete thresholds is twice as likely as a typical prisoner to be a woman.<sup>5</sup>
 
-<br>
-
 ### Retroactivity and Responsible Governance
 Florida's prison population exceeded 100,000 in response to forty years of public policy that emphasized imprisonment at the expense of more effective mechanisms to promote public health and safety. In 1970, Florida imprisoned fewer than 9,000 of its residents. In 2009, the number of people in Florida prisons exceeded 100,000. [The exponential growth of Florida's criminal justice system](https://accountablejustice.github.io/report/#path) was due to forty years of laws and policies that [recent research has shown to be harmful and counterproductive]( https://doi.org/10.17226/18613). The War on Drugs and other initiatives that resulted in very long terms of imprisonment are today viewed as monumental public policy failures. It produced crowded prisons that functioned as warehouses and it neglected community-based strategies that can actually reduce the social and economic harms drug abuse can inflict.<sup>6</sup> And, in Florida, it contributed to the development of a network of [145 prison facilities that cost the state $2.7 billion a year](http://www.oppaga.state.fl.us/MonitorDocs/Reports/pdf/1908rpt.pdf).
 
@@ -179,7 +177,7 @@ These more restrictive eligibility requirements yielded 792 prisoners in the Jul
 
 ### Footnotes
 
-Cyrus O'Brien, consultant to the Project on Accountable Justice and Postdoctoral Research Associate at the John C. Danforth Center on Religion and Politics at Washington University in St. Louis, and Deborrah Brodsky, Executive Director of the Project on Accountable Justice, researched and wrote this report.
+Cyrus O'Brien, consultant to the Project on Accountable Justice and Postdoctoral Research Associate at the John C. Danforth Center on Religion and Politics at Washington University in St. Louis, and Deborrah Brodsky, Director of the Project on Accountable Justice, researched and wrote this report.
 
 1. For an overview of mandatory minimum policies and a comparison to other states, see [Greg Newburn and Sal Nuzzo, Mandatory Minimums, Crime, and Drug Abuse: Lessons Learned and Paths Ahead (The James Madison Institute, February 2019)](https://www.jamesmadison.org/mandatory-minimums-crime-and-drug-abuse-lessons-learned-and-paths-ahead/).
 
