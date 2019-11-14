@@ -3,7 +3,7 @@ layout: special
 type: noheading
 category: Report
 permalink: retroactivity.html
-title: Florida Rolled Back Parts of the War on Drugs, but Hundreds Remain in Prison under<br>Obsolete Laws
+title: Florida Rolled Back Parts of the War on Drugs but Hundreds Remain in Prison under<br>Obsolete Laws
 subTitle: Justice Demands that Reforms Be Made Retroactive <br><br>November 2019
 ---
 
