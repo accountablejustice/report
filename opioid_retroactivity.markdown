@@ -19,7 +19,7 @@ Judges who thought that these punishments were extreme or disproportionate could
 ### The Florida Legislature Partially Addressed the Problem
 In 2014, the Florida Legislature acknowledged that the trafficking threshold for prescription drugs were too low. Legislators passed laws that raised the thresholds significantly. The twenty-five year mandatory minimum threshold for hydrocodone increased from 44 pills to 462. The Legislature also added a new, seven-year mandatory minimum sentence for people possessing intermediate quantities of oxycodone or hydrocodone.
 
-Though the revised thresholds continue to inappropriately address drug addiction through incarceration rather than more effective public health interventions, they have reduced the number of Floridians sentenced each year to very long prison terms for possession of small quantities of prescription drugs.
+Though the revised thresholds [continue to ineffectively address drug addiction through incarceration](https://www.pewtrusts.org/en/research-and-analysis/issue-briefs/2018/03/more-imprisonment-does-not-reduce-state-drug-problems), they have reduced the number of Floridians sentenced each year to very long prison terms for possession of small quantities of prescription drugs.
 
 <br>
 
@@ -102,16 +102,12 @@ Though the revised thresholds continue to inappropriately address drug addiction
 
 <br>
 
-
-### The Legislature Should Make the Current Thresholds Retroactive
-Despite the change in law, hundreds of Floridians whose offenses occurred before the 2014 reforms remain incarcerated under the old thresholds. PAJ estimates that between 680 and 935 people could become eligible for early release if the 2014 legislation that reformed hydrocodone and oxycodone mandatory minimum sentences was made retroactive. The cost of incarcerating 680 people is $14,785,000 a year; incarcerating 935 people costs $20,330,000 a year.<sup>4</sup> As is consistent with [recent reporting on the topic by the _Tampa Bay Times_](https://www.tampabay.com/special-reports/2019/11/13/hundreds-of-florida-inmates-are-serving-drug-sentences-no-longer-in-state-law/), women are disproportionately affected by the Legislature's failure to make the reforms retroactive. People incarcerated under the obsolete thresholds are twice as likely as typical prisoners to be women.<sup>5</sup>
+Despite the change in law, hundreds of Floridians whose offenses occurred before the 2014 reforms remain incarcerated under the old thresholds. PAJ estimates that between 680 and 935 people could become eligible for early release if the 2014 legislation that reformed hydrocodone and oxycodone mandatory minimum sentences was made retroactive. The cost of incarcerating 680 people is $14,785,000 a year; incarcerating 935 people costs $20,330,000 a year.<sup>4</sup> Further, as is consistent with [recent research](https://www.sentencingproject.org/wp-content/uploads/2016/01/Gender-and-Justice-Women-Drugs-and-Sentencing-Policy.pdf) and [reporting on the topic by the _Tampa Bay Times_](https://www.tampabay.com/special-reports/2019/11/13/hundreds-of-florida-inmates-are-serving-drug-sentences-no-longer-in-state-law/), women are disproportionately affected by the Legislature's failure to make the reforms retroactive. A person incarcerated under the obsolete thresholds is twice as likely as a typical prisoner to be a woman.<sup>5</sup>
 
 <br>
 
 ### Retroactivity and Responsible Governance
-Opioid legislation is not the only area of law where fundamental fairness will require that reforms be made retroactive. Florida's prison population exceeded 100,000 in response to forty years of public policy that emphasized imprisonment at the expense of more effective mechanisms to promote public health and safety.
-
-In 1970, Florida imprisoned fewer than 9,000 of its residents. In 2009, the number of people in Florida prisons exceeded 100,000. [The exponential growth of Florida's criminal justice system](https://accountablejustice.github.io/report/#path) was due to forty years of laws and policies that [recent research has shown to be harmful and counterproductive]( https://doi.org/10.17226/18613). The War on Drugs and other initiatives that resulted in very long terms of imprisonment are today viewed as monumental public policy failures. It produced crowded prisons that functioned as warehouses and it neglected community-based strategies that can actually reduce the social and economic harms drug abuse can inflict.<sup>6</sup> Most citizens view the [$2.7 billion the state spends each year to operate 145 prison facilities](http://www.oppaga.state.fl.us/MonitorDocs/Reports/pdf/1908rpt.pdf) as a waste.
+Florida's prison population exceeded 100,000 in response to forty years of public policy that emphasized imprisonment at the expense of more effective mechanisms to promote public health and safety. In 1970, Florida imprisoned fewer than 9,000 of its residents. In 2009, the number of people in Florida prisons exceeded 100,000. [The exponential growth of Florida's criminal justice system](https://accountablejustice.github.io/report/#path) was due to forty years of laws and policies that [recent research has shown to be harmful and counterproductive]( https://doi.org/10.17226/18613). The War on Drugs and other initiatives that resulted in very long terms of imprisonment are today viewed as monumental public policy failures. It produced crowded prisons that functioned as warehouses and it neglected community-based strategies that can actually reduce the social and economic harms drug abuse can inflict.<sup>6</sup> And, in Florida, it contributed to the development of a network of [145 prison facilities that cost the state $2.7 billion a year](http://www.oppaga.state.fl.us/MonitorDocs/Reports/pdf/1908rpt.pdf).
 
 The Florida Legislature has a public mandate to roll back mass incarceration and embrace responsible policies to promote safety. Un-making mass incarceration in Florida is responsible governance, and it will require revisiting and revising forty years of failed policies.
 
@@ -122,9 +118,9 @@ Florida's prison system confines nearly [96,000 people but is resourced for far 
 
 
 ### Conclusion
-The Florida Legislature reformed the state’s mandatory minimum drug trafficking thresholds because they imposed sentences that were wildly disproportionate to the crime. Last year, Florida voters approved Amendment 11, which gave the Legislature the ability to make criminal justice reforms retroactive. In less than two months, Florida lawmakers will return for the 2020 Session with a mandate to shrink and reform the state's prison system, which is expensive and dangerous. The system is plagued by a reactive budgeting policy aimed at addressing the latest crisis rather than long-term strategies that advance public safety. staffing shortages, excessive mandatory overtime for staff, contraband and violence, aging facilities and prisoners, and a dearth of rehabilitation.
+The Florida Legislature reformed the state’s mandatory minimum drug trafficking thresholds because they imposed sentences that were wildly disproportionate to the crime. Last year, Florida voters approved Amendment 11, which removed an antiquated clause in the Florida Constitution and empowered Legislature to make sentencing reforms retroactive. In less than two months, Florida lawmakers will return for the 2020 Session with a mandate to shrink and reform the state's expensive and dangerous prison system, which has been plagued by reactive budgeting policies aimed at addressing the latest crisis rather than advancing long-term strategies to promote public safety.
 
-As guardians for public safety, state finances, and basic morality, Florida legislators must explore all options to take pressures off of the system, including ways to reduce the current prison population. Reforms to the trafficking thresholds in 2014 and 2019 reduced the number of people incarcerated for long periods of time, but 935 people remain in prison for constructively possessing opioids before the reforms took effect. Justice demands that the reforms be made retroactive and that courts consider resentencing people currently in prison.
+As guardians for public safety, state finances, and basic morality, Florida legislators must explore all options to take pressures off of the system, including ways to reduce the current prison population. Reforms to the trafficking thresholds in 2014 and 2019 reduced the number of people incarcerated for long periods of time, but 935 people remain in prison for constructively possessing opioids before the reforms took effect. Justice demands that the reforms be made retroactive and that people sentenced under obsolete laws .
 
 <br>
 
@@ -187,7 +183,7 @@ These more restrictive eligibility requirements yielded 792 prisoners in the Jul
 
 ### Footnotes
 
-Cyrus O'Brien and Deborrah Brodsky researched and wrote this report.
+Cyrus O'Brien, consultant to the Project on Accountable Justice and Postdoctoral Research Associate at the John C. Danforth Center on Religion and Politics at Washington University in St. Louis, and Deborrah Brodsky, Executive Director of the Project on Accountable Justice, researched and wrote this report.
 
 1. For an overview of mandatory minimum policies and a comparison to other states, see [Greg Newburn and Sal Nuzzo, Mandatory Minimums, Crime, and Drug Abuse: Lessons Learned and Paths Ahead (The James Madison Institute, February 2019)](https://www.jamesmadison.org/mandatory-minimums-crime-and-drug-abuse-lessons-learned-and-paths-ahead/).
 
