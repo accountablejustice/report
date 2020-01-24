@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 400px;
+        height: 450px;
+        position: absolute;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        position: center;
+    }
+
+    path.slice{
+        stroke-width:2px;
+    }
+
+    text{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    polyline{
+        opacity: .3;
+        stroke: black;
+        stroke-width: 2px;
+        fill: none;
+    }
+
+    .labelValue
+    {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 200%;
+        opacity: 1;
+
+    }
+
+    label {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+    }
+
+    datalabel {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+    }
+
+
+    .toolTip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: rgba(0, 0, 0, 0.8);
+        border: 0 none;
+        border-radius: 2px;
+        box-shadow: -3px 3px 15px #888888;
+        color: white;
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+
+    text.datalabel {
+        font-size: 120%;
+        fill: black;
+    }
+    .legend {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60%;
+    }
+    rect {
+        stroke-width: 2;
+    }
+
+    text {
+        font: 12px sans-serif;
+    }
+
+
+    text.value{
+        font-size: 100%;
+        fill: black;
+    }
+
+    text.label{
+        font-size: 100%;
+    }
+
+    .axis text {
+        font: 12px sans-serif;
+    }
+
+    .axis path{
+        fill: none;
+        stroke: #000;
+    }
+
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .axis .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    .axisHorizontal path{
+        fill: none;
+    }
+
+    .axisHorizontal line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .axisHorizontal .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    .bar {
+        fill-opacity: .7;
+    }
+
+    .bar:hover {
+        fill-opacity: 1;
+    }
+    .x.axis path {
+        display: none;
+    }
+    h3 {
+        text-align: center;
+        color: #555;
+    }
+    .form {
+        text-align: center
+    }
+
+
+</style>
+<h3>Opioid Prisoners by County, Top 20 Contributing Counties</h3>
+<form>
+    <label><input type="radio" name="dataset" id="dataset" value="Rate" checked> Rate per 100k Residents</label>
+    <label><input type="radio" name="dataset" id="dataset" value="Prisoners"> Number of Prisoners</label>
+</form>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+    Rate = [
+        {label:"MIAMI-DADE",value: 1.6},
+        {label:"PALM BEACH",value: 2.7},
+        {label:"PASCO",value: 3},
+        {label:"LEE",value: 3.5},
+        {label:"COLLIER",value: 4.2},
+        {label:"SARASOTA",value: 4.6},
+        {label:"POLK",value: 4.6},
+        {label:"VOLUSIA",value: 5},
+        {label:"BROWARD",value: 5.5},
+        {label:"MANATEE",value: 6.1},
+        {label:"PINELLAS",value: 6.2},
+        {label:"BREVARD",value: 6.9},
+        {label:"MARION",value: 7},
+        {label:"SEMINOLE",value: 7.6},
+        {label:"DUVAL",value: 8.4},
+        {label:"ORANGE",value: 8.4},
+        {label:"HILLSBOROUGH",value: 8.5},
+        {label:"ST. LUCIE",value: 8.7},
+        {label:"ESCAMBIA",value: 11.2},
+        {label:"OSCEOLA",value: 35}
+    ];
+
+    Prisoners = [
+        {label:"PASCO",value: 13},
+        {label:"COLLIER",value: 13},
+        {label:"SARASOTA",value: 17},
+        {label:"MANATEE",value: 20},
+        {label:"MARION",value: 21},
+        {label:"LEE",value: 22},
+        {label:"VOLUSIA",value: 22},
+        {label:"ST. LUCIE",value: 22},
+        {label:"POLK",value: 25},
+        {label:"SEMINOLE",value: 28},
+        {label:"ESCAMBIA",value: 28},
+        {label:"PALM BEACH",value: 33},
+        {label:"BREVARD",value: 34},
+        {label:"MIAMI-DADE",value: 36},
+        {label:"PINELLAS",value: 50},
+        {label:"DUVAL",value: 62},
+        {label:"BROWARD",value: 85},
+        {label:"ORANGE",value: 90},
+        {label:"HILLSBOROUGH",value: 94},
+        {label:"OSCEOLA",value: 97}
+    ];
+
+
+    d3.selectAll("input").on("change", selectDataset);
+
+    function selectDataset()
+    {
+        var value = this.value;
+        if (value == "Rate")
+        {
+            change(Rate);
+        }
+        else if (value == "Prisoners")
+        {
+            change(Prisoners);
+        }
+    }
+
+    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/20), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/20), left: (parseInt(d3.select('body').style('width'), 10)/3.8)},
+        width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
+        height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
+
+    var formatPercent = d3.format(",%");
+
+    var y = d3.scale.ordinal()
+        .rangeRoundBands([height, 0], .2, 0.5);
+
+    var x = d3.scale.linear()
+        .range([0, width-37]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom")
+        .ticks(0);
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+    //.tickFormat(formatPercent);
+
+    var formatcomma = d3.format(",.0f")	;
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    svg.append("g")
+        .attr("class", "labelValue");
+
+    d3.select("input[value=\"Rate\"]").property("checked", true);
+    change(Rate);
+
+
+
+    function change(dataset) {
+
+        y.domain(dataset.map(function(d) { return d.label; }));
+        x.domain([0, d3.max(dataset, function(d) { return d.value; })]);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        svg.select(".y.axis").remove();
+        svg.select(".x.axis").remove();
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(0)")
+            .attr("x", width/2)
+            .attr("dx", ".1em")
+            .style("text-anchor", "middle")
+            .text("");
+
+
+        var bar = svg.selectAll(".bar")
+            .data(dataset, function(d) { return d.label; });
+        // new data:
+        bar.enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", 0)
+            .attr("y", function(d) { return y(d.label); })
+            .attr("width", function(d) { return x(d.value); })
+            .attr("height", y.rangeBand(0))
+            .attr("fill", "#98abc5")
+            .on("click", function(){
+                // Determine if current line is visible
+                var red = bar.red ? false : true,
+                    newColor = red ? "darkred": "#98abc5" ;
+                // Hide or show the elements
+                d3.select(this).attr("fill", newColor);
+                bar.red = red;
+            });
+
+
+
+
+
+        // updated data:
+        bar.transition()
+            .duration(750)
+            .attr("x", function(d) { return 0; })
+            .attr("y", function(d) { return y(d.label); })
+            .attr("width", function(d) { return x(d.value); })
+            .attr("height", y.rangeBand());
+
+
+
+        var text = svg.select(".labelValue").selectAll("text")
+            .data(dataset, function(d) {return d.label});
+
+        text.enter()
+            .append("text")
+            .attr("x", function(d) {return x(d.value)+ 3;})
+            .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
+            .text(function(d) {return formatcomma(d.value)});
+
+        text
+            .transition().duration(750)
+            .attr("dy", ".35em")
+            .attr("x", function(d) {return x(d.value)+ 3;})
+            .attr("y", function (d) {return y(d.label)+(y.rangeBand()/2);})
+            .text(function(d) {return formatcomma(d.value)});
+
+
+
+    }
+
+
+    var clickicon =  d3.selectAll('svg')
+        .append('image')
+        .attr('xlink:href','https://accountablejustice.github.io/report/img/slides/click.svg')
+        .attr('height', '25')
+        .attr('width', '25')
+        .attr('opacity', 0)
+        .attr('x', 200)
+        .attr('y', 240);
+
+
+
+    var clicktext = svg.append("text")
+        .attr('x',145)
+        .attr('y',240)
+        .attr('opacity',0)
+        .text("Click on any country to track");
+
+    var clicktext2 = svg.append("text")
+        .attr('x',145)
+        .attr('y',252)
+        .attr('opacity',0)
+        .text("its change in ranking.");
+
+    clickicon.transition()
+        .delay(2000)
+        .duration(2000)
+        .attr('opacity', 1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1).transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+
+    ;
+
+    clicktext.transition()
+        .delay(2000)
+        .duration(2000)
+        .attr('opacity', 1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1) .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1) .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1);
+
+    clicktext2.transition()
+        .delay(2000)
+        .duration(2000)
+        .attr('opacity', 1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1) .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1) .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1)
+        .transition()
+        .duration(1000)
+        .attr('opacity',.4)
+        .transition()
+        .duration(1000)
+        .attr('opacity',1);
+
+
+</script>
+
+
+
