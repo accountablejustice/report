@@ -163,13 +163,13 @@
     Opioid = [
         {label:"Black non-Hispanic",value :35},
         {label:"Hispanic (Any Race)",value :22},
-        {label:"White non-Hispanic",value :42},
+        {label:"White non-Hispanic",value :42}
     ];
 
     AllOther = [
         {label:"Black non-Hispanic",value :46},
         {label:"Hispanic (Any Race)",value :14},
-        {label:"White non-Hispanic",value :40},
+        {label:"White non-Hispanic",value :40}
     ];
 
 
@@ -214,7 +214,6 @@
         .orient("left");
     //.tickFormat(formatPercent);
 
-    var formatcomma = d3.format(",.0f")	;
 
     var svg = d3.select("body").append("svg")
         .attr("width", width + margin.left + margin.right)
