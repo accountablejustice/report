@@ -18,16 +18,112 @@ There are three times as many Latinos incarcerated in Florida prisons than are i
 
 The underreporting of Latinos coincides with a systematic overreporting of white, non-Hispanic prisoners. Essentially, the Florida Department of Corrections incorrectly reports approximately 9,000 Latino prisoners as non-Hispanic whites. Correcting this systematic error gives a very different picture of Florida's prison population.
 
-
-
-<details>
-  <summary><strong>There are more details to this story. Click here to read more about the FDC data and PAJ's investigation into it.</strong></summary>
-
 <br>
 
-Florida has underreported the number of Latinos in its prison system for decades.
+<h4><center>Florida Prison Population by Race and Ethnicity</center></h4>
 
-</details>
+ <div class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-push-6  col-sm-6">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-cly1{text-align:left;vertical-align:middle}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 204px">
+<colgroup>
+<col style="width: 99px">
+<col style="width: 105px">
+</colgroup>
+  <tr>
+    <th class="tg-nrix" colspan="2">As Indicated by Florida Department of Corrections Data</th>
+  </tr>
+  <tr>
+    <td class="tg-cly1">Black</td>
+    <td class="tg-nrix">46,151</td>
+  </tr>
+  <tr>
+    <td class="tg-cly1">White</td>
+    <td class="tg-nrix">45,773</td>
+  </tr>
+  <tr>
+    <td class="tg-cly1">Hispanic</td>
+    <td class="tg-nrix">4,584</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Other</td>
+    <td class="tg-baqh">526</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Total</td>
+    <td class="tg-baqh">97,034</td>
+  </tr>
+</table>
+  </div>
+                <div class="col-lg-6 col-sm-pull-6  col-sm-6"  markdown="1">
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-cly1{text-align:left;vertical-align:middle}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 410px">
+<colgroup>
+<col style="width: 76px">
+<col style="width: 134px">
+<col style="width: 111px">
+<col style="width: 89px">
+</colgroup>
+  <tr>
+    <th class="tg-nrix" colspan="4">As Estimated by the Project on Accountable Justice</th>
+  </tr>
+  <tr>
+    <td class="tg-cly1"></td>
+    <td class="tg-nrix">Non-Hispanic</td>
+    <td class="tg-baqh">Hispanic</td>
+    <td class="tg-baqh">Total</td>
+  </tr>
+  <tr>
+    <td class="tg-cly1">Black</td>
+    <td class="tg-nrix">44,153</td>
+    <td class="tg-baqh">1,998</td>
+    <td class="tg-baqh">46,151</td>
+  </tr>
+  <tr>
+    <td class="tg-cly1">White</td>
+    <td class="tg-nrix">38,852</td>
+    <td class="tg-baqh">11,505</td>
+    <td class="tg-baqh">50,357</td>
+  </tr>
+  <tr>
+    <td class="tg-cly1">Other</td>
+    <td class="tg-nrix">422</td>
+    <td class="tg-baqh">104</td>
+    <td class="tg-baqh">526</td>
+  </tr>
+  <tr>
+    <td class="tg-cly1">Total</td>
+    <td class="tg-nrix">83,427</td>
+    <td class="tg-baqh">13,607</td>
+    <td class="tg-baqh">97,034</td>
+  </tr>
+</table>
+</div>
+   </div>
+       </div>
+           </div>
+
+The Florida Department of Corrections seems to be aware of the systematic underreporting of Latinos, and, since early 2019, has manipulated the aggregate-level data.<sup>1</sup>
+
+
 
 ### Florida's Obsolete Drug Laws Disproportionately Affect Latinos and Women
 
@@ -86,7 +182,12 @@ More broadly, Florida should follow other states -- including Georgia, Texas, an
 
 As a community and a nation, we must remember that imprisonment is family separation. [More than 5 million American children have had a parent incarcerated, and more than 300,000 of those children are in Florida](https://www.aecf.org/resources/a-shared-sentence?gclid=Cj0KCQiA04XxBRD5ARIsAGFygj-Um2PUR0vMgZDDM4hqIIyw8kxxviNiMbY3rIi_T10QeSwzRd00x6caAmpqEALw_wcB/). Florida's runaway prison system is keeping children away from their mothers and fathers -- a tragedy made all the more worse for the fact that the separated families are disproportionately black and brown.
 
+Finally, it must be noted that this report brings attention to disparities that have been hiding in plain sight for decades: Florida's drug laws -- and criminal justice practices more broadly -- disproportionately impact Floridians of color. For decades, the full extent of these disparities have been masked by basic inaccuracies in data produced by the Florida Department of corrections. **As Florida moves to reduce its overreliance on mass incarceration, it's important that we remember some of the basics. We need accurate data systems that allow the public to track racial and ethnic disparities to see who is most harmed by Florida's $2.7 prison system.**
+
 ***
+
+<section id="methodology">
+</section>
 
 ### Methodology
 
@@ -94,6 +195,21 @@ To estimate the number of Hispanic prisoners in Florida, PAJ matched prisoners�
 
 PAJ was able to match last name data for 95 percent of cases listed in the July 2019 snapshot. Aggregating the population-level data about Hispanicity for this sample indicated that just over 14 percent of the sample population is Hispanic. Extrapolating this figure over the entirety of Florida’s prison population of 97,034 indicated that 13,600 of Florida’s prisoners would identify as Hispanic. This estimate includes Hispanics of all races, including nearly 2,000 who are both black and Hispanic, an appropriate classification for many Floridians with Latin American or Caribbean ancestry.
 
-It is important to note that PAJ's estimates of the number of Latinos in the Florida prison system are conservative. The number of Latinos in Florida prisons is likely ten to twenty percent higher than reported here. The reason for this conservative estimate lies in our methodology: By using Census data about surnames, PAJ was forced to assume that there were no disparities _within_ surnames. If Latinos are incarcerated at higher rates than non-Hispanic whites ([as we have good reason to believe](https://www.sentencingproject.org/publications/color-of-justice-racial-and-ethnic-disparity-in-state-prisons/)) this disparity would be reflected within surnames as well as more broadly. For instance, if, according to the census, 30 percent of people with the surname "Moran" are Hispanic, we would expect a higher pecentage of the people in prison named "Moran" to identify as Hispanic or Latino. For an accessible explanation of the flaws of using "average" data to investigate disparities, there are few better sources than [this article in _The Atlantic_ by James Fallows](https://www.theatlantic.com/magazine/archive/1993/04/low-class-conclusions/305404/). Despite its shortcomings, this methodology is the best available.
+It is important to note that PAJ's estimates of the number of Latinos in the Florida prison system are conservative. The number of Latinos in Florida prisons is likely ten to fifteen percent higher than reported here. The reason for this conservative estimate lies in our methodology: By using Census data about surnames, PAJ was forced to assume that there were no disparities _within_ surnames. If Latinos are incarcerated at higher rates than non-Hispanic whites ([as we have good reason to believe](https://www.sentencingproject.org/publications/color-of-justice-racial-and-ethnic-disparity-in-state-prisons/)) this disparity would be reflected within surnames as well as more broadly. For instance, if, according to the census, 30 percent of people with the surname "Moran" are Hispanic, we would expect a higher percentage of the people in prison named "Moran" to identify as Hispanic or Latino. For an accessible explanation of the flaws of using "average" data to investigate disparities, there are few better sources than [this article in _The Atlantic_ by James Fallows](https://www.theatlantic.com/magazine/archive/1993/04/low-class-conclusions/305404/). Despite its shortcomings, this methodology is the best available and yields a conservative estimate of the number of Latinos in Florida's prisons.
 
 
+
+<section id="footnotes">
+</section>
+
+<br>
+ <hr class="section-heading-spacer">
+   <div class="clearfix"></div>
+<br>
+
+
+### Footnotes
+
+Cyrus O'Brien, consultant to the Project on Accountable Justice and Postdoctoral Research Associate at the John C. Danforth Center on Religion and Politics at Washington University in St. Louis, and Deborrah Brodsky, Director of the Project on Accountable Justice, researched and wrote this report.
+
+1. The Florida Department of Corrections' raw data inaccurately identify nearly 9,000 Latinos as non-Hispanic whites. Nonetheless, the figures in the Department of Corrections' annual reports more closely resemble PAJ's estimates than its own raw data. PAJ first prepared a draft of this report in early 2019 and circulated it in criminal justice reform circles in Tallahassee. Shortly after PAJ brought attention to the issue, the Department of Corrections deleted its earlier annual statistics from its website. The new annual reports contained racial and ethnic data that closely matched estimates produced by PAJ. The Department of Corrections has published no notes, methodology, or explanation as to why it deleted statistics from its website or why its aggregate-level statistics do not match its raw data.
